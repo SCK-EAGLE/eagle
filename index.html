@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <body onLoad="run();">
+	<p id="demo"> test </p>
+ 
+	<script>
+	function loadXMLDoc(filename)
+	 {
+	 if (window.XMLHttpRequest)
+	   {
+	   xhttp=new XMLHttpRequest();
+	   }
+	 else // code for IE5 and IE6
+	   {
+	   xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	   }
+	 xhttp.open("GET",filename,false);
+	 xhttp.send();
+	 return xhttp.responseXML;
+	 } 
+	 
+	function run() { 
+		document.getElementById("demo").innerHTML = "<p> test 1</p>";
+		xmlDoc = loadXMLDoc('file:///C:/Users/mdeckers/Desktop/classified_links.xml');
+		document.getElementById("demo").innerHTML = "<p> test 2</p>";
+		
+		document.write("<table border='1'>");
+		document.getElementById("demo").innerHTML = "<p> test 4</p>";
+		var x=xmlDoc.getElementsByTagName("classification");
+		for (i=0;i<x.length;i++)
+		   { 
+		   document.write("<tr><td>");
+		   document.write(x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue);
+		   document.write("</td><td>");
+		   document.write(x[i].getElementsByTagName("language")[0].childNodes[0].nodeValue);
+		   document.write("</td></tr>");
+		   }
+		document.write("</table>");
+	}
+	</script>
+ 
+</body>
+ </html>
+ 
