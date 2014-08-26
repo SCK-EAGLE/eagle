@@ -38,9 +38,8 @@
 				document.write("<h3>" + child.getAttribute("type") + "</h3>");
 				entries = child.childNodes;
 				document.writeln("<table border='1'>");
-				entry = entries[k];
 				
-				/*document.writeln("<tr><td>");
+				document.writeln("<tr><td>");
 				document.writeln("</td><td>");
 				document.write("<b>Title</b>");
 				document.writeln("</td><td>");
@@ -48,7 +47,7 @@
 				document.writeln("</td><td>");
 				document.write("<b>Description</b>");
 				document.writeln("</td><td>");
-				document.writeln("</td></tr>");*/
+				document.writeln("</td></tr>");
 				for(k = 0; k < entries.length; k++){
 					entry = entries[k];
 					var text;
