@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
  <body onLoad="run();">
- 	<form action="">
-<input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br>
-<input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br>
-<input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br>
-</form>
+ 	
  
 	<script>
 	document.langs = [];
 	function setuplangs(xmlDoc)
 	{
+		document.writeln('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
 		document.writeln("<h2>Filters</h2>");
 		document.writeln("<h3>Languages</h3>");
 		var languages = xmlDoc.getElementsByTagName("language");
