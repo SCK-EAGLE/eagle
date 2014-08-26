@@ -36,21 +36,21 @@
 		   var text;
 		   document.writeln("<tr><td>");
 		   var text = x[i].getAttribute("language");
-		   /*if (text == "null"){
-		   	text = "";
-		   }*/
+		   if (text == null || text == "null"){
+		   	text = " ";
+		   }
 		   document.write(text);
 		   document.writeln("</td><td>");
 		   var text = x[i].getAttribute("title");
-		   /*if (text == "null"){
-		   	text = "";
-		   }*/
+		   if (text == null || text == "null"){
+		   	text = " ";
+		   }
 		   document.write(text);
 		   document.writeln("</td><td>");
 		   var text = x[i].getAttribute("author");
-		   /*if (text == "null"){
-		   	text = "";
-		   }*/
+		   if (text == null || text == "null"){
+		   	text = " ";
+		   }
 		   document.write(text);
 		   document.writeln("</td><td>");
 		   var text = x[i].getAttribute("description");
