@@ -39,28 +39,33 @@
 		   var text;
 		   document.write("<tr><td>");
 		   text = x[i].getAttribute("language");
-		   if (text == "null")
+		   if (text == "null"){
 		   	text = "";
+		   }
 		   document.write(text);
 		   document.write("</td><td>");
 		   text = x[i].getAttribute("title");
-		   if (text == "null")
+		   if (text == "null"){
 		   	text = "";
+		   }
 		   document.write(text);
 		   document.write("</td><td>");
 		   text = x[i].getAttribute("author");
-		   if (text == "null")
+		   if (text == "null"){
 		   	text = "";
+		   }
 		   document.write(text);
 		   document.write("</td><td>");
 		   text = x[i].getAttribute("discription");
-		   if (text == "null")
+		   if (text == "null"){
 		   	text = "";
+		   }
 		   document.write(text);
 		   document.write("</td><td>");
 		   text = x[i].getAttribute("url");
-		   if (text == "null")
+		   if (text == "null"){
 		   	text = "";
+		   }
 		   document.write("<a href=\"" + text + "\"/>");
 		   document.write("</td></tr>");
 		   }
