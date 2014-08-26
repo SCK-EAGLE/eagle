@@ -13,7 +13,7 @@
 		document.writeln("<div id=cbs> </div>");
 		for (i = 0; i < languages.length; i++){
 			//document.writeln('<input type="checkbox" name="lang" value="' + languages[i].getAttribute("tag") + '" onclick="checkAddress(this)"' + '>' + languages[i].childNodes[0].nodeValue + '<br>');
-
+			alert(i);
 			// create the necessary elements
 			var label= document.createElement("label");
 			var description = document.createTextNode(languages[i].childNodes[0].nodeValue);
@@ -26,7 +26,7 @@
 			
 			label.appendChild(checkbox);   // add the box to the element
 			label.appendChild(description);// add the description to the element
-			
+			label.appendChild(document.createElement("br"));
 			// add the label element to your div
 			document.getElementById('cbs').appendChild(label);
 		}
