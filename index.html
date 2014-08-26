@@ -36,17 +36,32 @@
 		alert(xmlDoc);
 		for (i=0;i<x.length;i++)
 		   { 
+		   var text;
 		   document.write("<tr><td>");
-		   document.write(x[i].getAttribute("language"));
-		   alert(x[i].getAttribute("language"));
+		   text = x[i].getAttribute("language");
+		   if (text == "null")
+		   	text = "";
+		   document.write(text);
 		   document.write("</td><td>");
-		   document.write(x[i].getAttribute("title"));
+		   text = x[i].getAttribute("title");
+		   if (text == "null")
+		   	text = "";
+		   document.write(text);
 		   document.write("</td><td>");
-		   document.write(x[i].getAttribute("author"));
+		   text = x[i].getAttribute("author");
+		   if (text == "null")
+		   	text = "";
+		   document.write(text);
 		   document.write("</td><td>");
-		   document.write(x[i].getAttribute("description"));
+		   text = x[i].getAttribute("discription");
+		   if (text == "null")
+		   	text = "";
+		   document.write(text);
 		   document.write("</td><td>");
-		   document.write(x[i].getAttribute("url"));
+		   text = x[i].getAttribute("url");
+		   if (text == "null")
+		   	text = "";
+		   document.write("<a href=\"" + text + "\"/>");
 		   document.write("</td></tr>");
 		   }
 		document.write("</table>");
