@@ -11,7 +11,7 @@
 		var languages = xmlDoc.getElementsByTagName("language");
 		document.writeln('<form action="">');
 		for (i = 0; i < languages.length; i++){
-			document.writeln('<input type="checkbox" name="lang" value="' + languages[i].getAttribute("tag") + '" onclick="checkAddress(this)"' + '>' + languages[i].childNodes[0].nodeValue + '<br>');
+			document.writeln('<input type="checkbox" name="lang" value="' + languages[i].getAttribute("tag") + '" onclick="checkAddress(this);"' + '>' + languages[i].childNodes[0].nodeValue + '<br>');
 		}
 		
 		document.writeln('</form>');
