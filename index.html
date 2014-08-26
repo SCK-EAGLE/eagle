@@ -29,45 +29,45 @@
 	function run() { 
 		xmlDoc = loadXMLDoc("classified_links.xml");
 		
-		document.write("<table border='1'>");
+		document.writeln("<table border='1'>");
 		var x=xmlDoc.getElementsByTagName("entry");
 		for (i=0;i<x.length;i++)
 		   { 
 		   var text;
-		   document.write("<tr><td>");
+		   document.writeln("<tr><td>");
 		   var text = x[i].getAttribute("language");
 		   /*if (text == "null"){
 		   	text = "";
 		   }*/
 		   document.write(text);
-		   document.write("</td>\n<td>");
+		   document.writeln("</td><td>");
 		   var text = x[i].getAttribute("title");
 		   /*if (text == "null"){
 		   	text = "";
 		   }*/
 		   document.write(text);
-		   document.write("</td>\n<td>");
+		   document.writeln("</td><td>");
 		   var text = x[i].getAttribute("author");
 		   /*if (text == "null"){
 		   	text = "";
 		   }*/
 		   document.write(text);
-		   document.write("</td>\n<td>");
+		   document.writeln("</td><td>");
 		   var text = x[i].getAttribute("description");
 		   /*if (text == "null"){
 		   	text = "";
 		   }*/
 		   document.write(text);
-		   document.write("</td>\n<td>");
+		   document.writeln("</td><td>");
 		   var text = x[i].getAttribute("url");
 		   /*if (text == "null"){
 		   	text = "";
 		   }*/
 		   document.write(text);
-		   //document.write('<a href=\"' + text + '\">Visit</a>');
-		   document.write("</td></tr>\n");
+		   document.write("<a href=" + text + ">Visit</a>");
+		   document.writeln("</td></tr>");
 		   }
-		document.write("</table>");
+		document.writeln("</table>");
 	}
 	</script>
  
