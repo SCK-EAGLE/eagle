@@ -13,19 +13,19 @@
 		for (i = 0; i < languages.length; i++){
 			document.writeln('<input type="checkbox" name="lang" value="' + languages[i].getAttribute("tag") + '" onclick=' + checkAddress(this) + '>' + languages[i].childNodes[0].nodeValue + '<br>');
 		
-		/*	var x = document.createElement("input");
+			var x = document.createElement("input");
 		x.setAttribute("type", "checkbox"); 
 		x.setAttribute("name", "lang"); 
 		x.setAttribute("value", languages[i].getAttribute("tag")); 
 		x.setAttribute("onclick", checkAddress(this)); 
 		x.value=languages[i].childNodes[0].nodeValue;
-		document.writeln(x);*/
+		document.writeln(x);
 		}
 		
 		document.writeln('</form>');
 		var langboxes = document.getElementsByName("lang");
 		for (var i = 0; i < langboxes .length; i++){
-		    langboxes [i].checked = true;
+		    langboxes[i].checked = true;
 		}
 		
 	}
