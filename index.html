@@ -19,7 +19,7 @@
 		x.setAttribute("value", languages[i].getAttribute("tag")); 
 		x.setAttribute("onclick", checkAddress(this)); 
 		x.value=languages[i].childNodes[0].nodeValue;
-		document.writeln(x);
+		container.appendChild(x);
 		}
 		
 		document.writeln('</form>');
