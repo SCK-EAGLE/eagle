@@ -19,8 +19,6 @@
 	   {
 	   if (xhttp.readyState==4 && xhttp.status==200)
 	     {
-	     	alert(xhttp.readyState);
-	     	alert(xhttp.responseText);
 	     }
 	   }
 	 xhttp.open("GET",filename,true);
@@ -33,7 +31,6 @@
 		
 		document.write("<table border='1'>");
 		var x=xmlDoc.getElementsByTagName("entry");
-		alert(xmlDoc);
 		for (i=0;i<x.length;i++)
 		   { 
 		   var text;
