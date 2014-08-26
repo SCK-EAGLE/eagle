@@ -33,7 +33,7 @@
 		for (i=0; i < c.length; i++){
 			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
 			childs = c[i].childNodes;
-			for (j = 0; j < childs.length; childs++){
+			for (j = 0; j < childs.length; j++){
 				child = childs[j];
 				document.write("<h3>" + child.getAttribute("type") + "</h3>");
 				entries = child.childNodes;
