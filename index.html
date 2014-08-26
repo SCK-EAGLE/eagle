@@ -17,12 +17,8 @@
 	   }
 	 xhttp.onreadystatechange=function()
 	   {
-	   alert(xhttp.readyState);
-	   alert(xhttp.status);
 	   if (xhttp.readyState==4 && xhttp.status==200)
 	     {
-		 alert(xhttp.responseText);
-	     document.getElementById("demo").innerHTML=xhttp.responseText;
 	     }
 	   }
 	 xhttp.open("GET",filename,true);
@@ -31,21 +27,24 @@
 	 } 
 	 
 	function run() { 
-		document.getElementById("demo").innerHTML = "<p> test 1</p>";
 		alert("first");
 		xmlDoc = loadXMLDoc("classified_links.xml");
 		alert("second");
-		document.getElementById("demo").innerHTML = "<p> test 2</p>";
 		
 		document.write("<table border='1'>");
-		document.getElementById("demo").innerHTML = "<p> test 4</p>";
-		var x=xmlDoc.getElementsByTagName("classification");
+		var x=xmlDoc.getElementsByTagName("entry");
 		for (i=0;i<x.length;i++)
 		   { 
 		   document.write("<tr><td>");
-		   document.write(x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue);
-		   document.write("</td><td>");
 		   document.write(x[i].getElementsByTagName("language")[0].childNodes[0].nodeValue);
+		   document.write("</td><td>");
+		   document.write(x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue);
+		   document.write("</td><td>");
+		   document.write(x[i].getElementsByTagName("author")[0].childNodes[0].nodeValue);
+		   document.write("</td><td>");
+		   document.write(x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue);
+		   document.write("</td><td>");
+		   document.write(x[i].getElementsByTagName("url")[0].childNodes[0].nodeValue);
 		   document.write("</td></tr>");
 		   }
 		document.write("</table>");
