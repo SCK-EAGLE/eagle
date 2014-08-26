@@ -14,6 +14,10 @@
 			document.writeln('<input type="checkbox" name="lang" value="' + languages[i].getAttribute("tag") + '" onclick="checkAddress(this)">' + languages[i].childNodes[0].nodeValue + '<br>');
 		}
 		document.writeln('</form>');
+		var langboxes = document.getElementsByName("lang");
+		for (var i = 0; i < langboxes .length; i++){
+		    langboxes [i].checked = true;
+		}
 		
 	}
 	function checkAddress(checkbox)
