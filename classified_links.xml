@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EAGLE>
+	<classification 
+		type="level_of_detail"
+		name="Order by detail"
+		language="ENG" >
+		<list level_of_detail="introductory">
+			<entry 
+				difficulty="difficulty.expert"
+				language="EN"
+				url="http://www.who.int/ionizing_radiation/about/what_is_ir/en/"
+				title="What is Ionizing Radiation?"
+				author="World Health Organization"
+				desctiption=""/>
+			<entry 
+				language="EN"
+				url="http://www.nrc.gov/about-nrc/radiation/rad-health-effects.html"
+				title="Radiation and Its Health Effects"
+				author="United States Nuclear Regulatory Commission"
+				description="Notice the image and chart at the bottom. A 3-millirem exposure is equally likely to kill you as smoking one cigarette. Living near or working on a nuclear powerplant
+				for a full year results in 0.10 millirem. It can be concluded that smoking one cigarette is about as dangerous as living near or on a nuclear powerplant for 30 years. "/>
+		</list>
+		<list level_of_detail="scientific">
+			
+		</list>
+	</classification>
+	<classification 
+		type="application"
+		name="By application" >
+		<list application="dangers and protection">
+			<entry 
+				language="EN"
+				url="http://www.nrc.gov/about-nrc/radiation/rad-health-effects.html"
+				title="Radiation and Its Health Effects"
+				author="United States Nuclear Regulatory Commission"
+				description="Notice the image and chart at the bottom. A 3-millirem exposure is equally likely to kill you as smoking one cigarette. Living near or working on a nuclear powerplant
+				for a full year results in 0.10 millirem. It can be concluded that smoking one cigarette is about as dangerous as living near or on a nuclear powerplant for 30 years. "/>
+			<entry 
+				language="NL"
+				url="http://www.fanc.fgov.be/nl/page/646.aspx"
+				title="Radon: gevaren en bescherming"
+				author="Federaal agentschap voor nucleaire controle"
+				desctiption="Informatie en tips voor bescherming tegen radon besmetting"/>
+			<entry 
+				language="FR"
+				url="http://www.fanc.fgov.be/fr/page/646.aspx"
+				title="Radon: dangers et protection"
+				author="Agence federale de controle nucleaire"
+				desctiption="Informations et conseils pour la protection contre la contamination au radon"/>
+		</list>
+		<list application="information">
+			
+			<entry
+				language="EN"
+				url="http://en.wikipedia.org/wiki/Ionizing_radiation"
+				title="Ionizing radiation"
+				author=""
+				description="Wikipedia page on ionizing radiation" />
+			<entry
+				language="NL"
+				url="https://nl.wikipedia.org/wiki/Ioniserende_straling"
+				title="Ioniserende straling"
+				author=""
+				description="Wikipedia pagina over ioniserende straling" />
+			<entry
+				language="FR"
+				url="https://fr.wikipedia.org/wiki/Rayonnement_ionisant"
+				title="Rayonnement ionisant"
+				author=""
+				description="Wikipedia page sur les rayonnements ionisants" />
+			<entry 
+				language="NL"
+				url="http://www.fanc.fgov.be/nl/page/homepage-agence-federale-de-controle-nucleaire-afcn/1.aspx"
+				title="Home pagina van het FANC"
+				author="World Health Organization"
+				desctiption="Het FANC bevordert de doeltreffende bescherming van de bevolking, werknemers
+				en het leefmilieu tegen het gevaar van ioniserende straling"/>
+			<entry 
+				language="EN"
+				url="http://www.fanc.fgov.be/fr/page/homepage-federaal-agentschap-voor-nucleaire-controle-fanc/1.aspx"
+				title="Page d'accueil de l'AFCN"
+				author="World Health Organization"
+				desctiption="L'AFCN promeut la protection efficace de la population, des travailleurs et de l'environnement
+				contre les dangers des rayonnements ionisants"/>
+			<entry
+				language="EN"
+				url="http://www.radiationanswers.org/"
+				title="Radiation Answers"
+				author="Radiation Answers"
+				description="Clear website containing basic information and common myths about radiation" />
+			<entry
+				language="EN"
+				url="http://hps.org/hpspublications/radiationfactsheets.html"
+				title="Radiation Fact Sheet"
+				author="Health Physics Today"
+				description="Web page containing fact sheets on many common and controversial topics concerning radiation" />
+		</list>
+		<list application="medical">
+			<entry 
+			    language="EN"
+				url="https://www.iaea.org/Publications/Booklets/RadPeopleEnv/pdf/chapter_8.pdf"
+				title="Medical uses of radiation"
+				author="IAEA"
+				desctiption=""/>
+			<entry 
+			    language="EN"
+				url="http://www.cancer.gov/cancertopics/factsheet/Therapy/radiation"
+				title="Radiation Therapy for Cancer"
+				author="National Cancer Institute"
+				desctiption="Web page providing a detailed explanation of using radiation to combat cancer"/>
+		</list>
+		<list application="disasters">
+			<entry 
+				language="EN"
+				url="http://chernobylgallery.com/chernobyl-disaster/radiation-levels/"
+				title="Radiation Levels Now"
+				author="The Chernobyl Gallery"
+				desctiption="Informative website about the radiation levels in Chernobyl then and now."/>
+		</list>
+	</classification>
+</EAGLE>
+
+
