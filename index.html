@@ -29,13 +29,6 @@
 	function run() { 
 		xmlDoc = loadXMLDoc("classified_links.xml");
 		
-		y=n.firstChild;
- while (y.nodeType!=1)
-   {
-   y=y.nextSibling;
-   }
- return y;
-		
 		var c = xmlDoc.getElementsByTagName("classification");
 		for (i=0; i < c.length; i++){
 			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
