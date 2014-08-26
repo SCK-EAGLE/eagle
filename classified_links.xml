@@ -2,8 +2,7 @@
 <EAGLE>
 	<classification 
 		type="level_of_detail"
-		name="Order by detail"
-		language="ENG" >
+		name="Order by detail">
 		<list level_of_detail="introductory">
 			<entry 
 				difficulty="difficulty.expert"
@@ -26,7 +25,7 @@
 	</classification>
 	<classification 
 		type="application"
-		name="By application" >
+		name="Order by application" >
 		<list application="dangers and protection">
 			<entry 
 				language="EN"
