@@ -40,31 +40,31 @@
 		   	text = "";
 		   }
 		   document.write(text);
-		   document.write("</td><td>");
+		   document.write("</td>\n<td>");
 		   var text = x[i].getAttribute("title");
 		   if (text == "null"){
 		   	text = "";
 		   }
 		   document.write(text);
-		   document.write("</td><td>");
+		   document.write("</td>\n<td>");
 		   var text = x[i].getAttribute("author");
 		   if (text == "null"){
 		   	text = "";
 		   }
 		   document.write(text);
-		   document.write("</td><td>");
+		   document.write("</td>\n<td>");
 		   var text = x[i].getAttribute("description");
 		   if (text == "null"){
 		   	text = "";
 		   }
 		   document.write(text);
-		   document.write("</td><td>");
+		   document.write("</td>\n<td>");
 		   var text = x[i].getAttribute("url");
 		   if (text == "null"){
 		   	text = "";
 		   }
-		   document.write('<a href="' + text + '">Visit</a>');
-		   document.write("</td></tr>");
+		   document.write('<a href=\"' + text + '\">Visit</a>');
+		   document.write("</td></tr>\n");
 		   }
 		document.write("</table>");
 	}
