@@ -29,6 +29,75 @@
 	function run() { 
 		xmlDoc = loadXMLDoc("classified_links.xml");
 		
+		y=n.firstChild;
+ while (y.nodeType!=1)
+   {
+   y=y.nextSibling;
+   }
+ return y;
+		
+		var c = xmlDoc.getElementsByTagName("classification");
+		for (i=0; i < c.length; i++){
+			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
+			child = c[i].firstChild;
+			while (child.nodeType != 1){
+				document.write("<h3>" + child.getAttribute("type") + "</h3>");
+				entry = child.firstChild;
+				document.writeln("<table border='1'>");
+				while(entry.nodeType != 1){
+					var text;
+					document.writeln("<tr><td>");
+					var text = entry.getAttribute("language");
+					document.write(text);
+					document.writeln("</td><td>");
+					var text = entry.getAttribute("title");
+					document.write(text);
+					document.writeln("</td><td>");
+					var text = entry.getAttribute("author");
+					document.write(text);
+					document.writeln("</td><td>");
+					var text = entry.getAttribute("description");
+					document.write(text);
+					document.writeln("</td><td>");
+					var text = entry.getAttribute("url");
+					/*if (text == "null"){
+						text = "";
+					}*/
+					document.write("<a href=" + text + ">Visit</a>");
+					document.writeln("</td></tr>");
+					entry = entry.nextSibling;
+				}
+				document.writeln("</table>");
+			}
+		}
+
+		document.writeln("<table border='1'>");
+		var x=xmlDoc.getElementsByTagName("entry");
+		for (i=0;i<x.length;i++)
+		   { 
+		   var text;
+		   document.writeln("<tr><td>");
+		   var text = x[i].getAttribute("language");
+		   document.write(text);
+		   document.writeln("</td><td>");
+		   var text = x[i].getAttribute("title");
+		   document.write(text);
+		   document.writeln("</td><td>");
+		   var text = x[i].getAttribute("author");
+		   document.write(text);
+		   document.writeln("</td><td>");
+		   var text = x[i].getAttribute("description");
+		   document.write(text);
+		   document.writeln("</td><td>");
+		   var text = x[i].getAttribute("url");
+		   /*if (text == "null"){
+		   	text = "";
+		   }*/
+		   document.write("<a href=" + text + ">Visit</a>");
+		   document.writeln("</td></tr>");
+		   }
+		document.writeln("</table>");
+		
 		document.writeln("<table border='1'>");
 		var x=xmlDoc.getElementsByTagName("entry");
 		for (i=0;i<x.length;i++)
