@@ -27,12 +27,11 @@
 	 } 
 	 
 	function run() { 
-		alert("first");
 		xmlDoc = loadXMLDoc("classified_links.xml");
-		alert("second");
 		
 		document.write("<table border='1'>");
 		var x=xmlDoc.getElementsByTagName("entry");
+		alert(xmlDoc);
 		for (i=0;i<x.length;i++)
 		   { 
 		   document.write("<tr><td>");
