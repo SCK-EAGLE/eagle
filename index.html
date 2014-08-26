@@ -37,16 +37,16 @@
 		for (i=0;i<x.length;i++)
 		   { 
 		   document.write("<tr><td>");
-		   document.write(x[i].getElementsByTagName("language")[0].childNodes[0].nodeValue);
-		   alert(x[i].getElementsByTagName("language")[0].childNodes[0].nodeValue);
+		   document.write(x[i].getAttribute("language"));
+		   alert(x[i].getAttribute("language"));
 		   document.write("</td><td>");
-		   document.write(x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue);
+		   document.write(x[i].getAttribute("title"));
 		   document.write("</td><td>");
-		   document.write(x[i].getElementsByTagName("author")[0].childNodes[0].nodeValue);
+		   document.write(x[i].getAttribute("author"));
 		   document.write("</td><td>");
-		   document.write(x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue);
+		   document.write(x[i].getAttribute("description"));
 		   document.write("</td><td>");
-		   document.write(x[i].getElementsByTagName("url")[0].childNodes[0].nodeValue);
+		   document.write(x[i].getAttribute("url"));
 		   document.write("</td></tr>");
 		   }
 		document.write("</table>");
