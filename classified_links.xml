@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <EAGLE>
+	<language>NL</language>
+	<language>FR</language>
+	<language>EN</language>
 	<classification 
 		type="level_of_detail"
 		name="Order by detail"
