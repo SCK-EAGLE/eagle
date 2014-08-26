@@ -3,10 +3,10 @@
  <body onLoad="run();">
 	<p id="demo"> test </p>
  
-	<script>
+	<script type="text/javascript">
 	function loadXMLDoc(filename)
 	 {
-	 	document.getElementById("demo").innerHTML = "<p> test 1a</p>";
+	 var xhttp;
 	 if (window.XMLHttpRequest)
 	   {
 	   xhttp=new XMLHttpRequest();
@@ -15,23 +15,26 @@
 	   {
 	   xhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	   }
-	 document.getElementById("demo").innerHTML = "<p> test 1b</p>";
 	 xhttp.onreadystatechange=function()
 	   {
+	   alert(xhttp.readyState);
+	   alert(xhttp.status);
 	   if (xhttp.readyState==4 && xhttp.status==200)
 	     {
+		 alert(xhttp.responseText);
 	     document.getElementById("demo").innerHTML=xhttp.responseText;
 	     }
 	   }
-	 document.getElementById("demo").innerHTML = "<p> test 1c</p>";
-	 xhttp.open("GET",filename,true);
+	 xhttp.open("GET","http://www.w3schools.com/xml/note.xml",true);
 	 xhttp.send();
 	 return xhttp.responseXML;
 	 } 
 	 
 	function run() { 
 		document.getElementById("demo").innerHTML = "<p> test 1</p>";
-		xmlDoc = loadXMLDoc("https://raw.githubusercontent.com/SCK-EAGLE/eagle/master/classified_links.xml");
+		alert("first");
+		xmlDoc = loadXMLDoc("classified_links.xml");
+		alert("second");
 		document.getElementById("demo").innerHTML = "<p> test 2</p>";
 		
 		document.write("<table border='1'>");
