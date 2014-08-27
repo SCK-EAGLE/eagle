@@ -4,6 +4,11 @@
  	
  
 	<script>
+	document.addEventListener("click", myFunction);
+
+		function myFunction() {
+		    alert("Hello World");
+		}
 	document.langs = [];
 	function checkAddress()
 	{
@@ -28,11 +33,7 @@
 			document.writeln('<input type="checkbox" name="lang" value="' + languages[i].getAttribute("tag") + '" onclick=function(){checkAddress();}' + '>' + languages[i].childNodes[0].nodeValue + '<br>');
 		}
 		
-		document.addEventListener("click", myFunction);
-
-		function myFunction() {
-		    alert("Hello World");
-		}
+		
 
 		//document.writeln('</form>');
 		var langboxes = document.getElementsByName("lang");
