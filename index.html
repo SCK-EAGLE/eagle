@@ -86,8 +86,8 @@
 		var c = xmlDoc.getElementsByTagName("classification");
 		alert("test1");
 		for (i=0; i < c.length; i++){
-			alert("test2");
 			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
+			alert("test2");
 			childs = c[i].childNodes;
 			for (j = 0; j < childs.length; j++){
 				child = childs[j];
