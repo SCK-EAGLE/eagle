@@ -83,6 +83,7 @@
 				document.writeln("</td><td>");
 				document.writeln("</td></tr>");
 				for(k = 0; k < entries.length; k++){
+					if (langs.indexOf(entry.getAttribute("language")) != -1){
 					entry = entries[k];
 					var text;
 					document.writeln("<tr><td>");
@@ -101,6 +102,7 @@
 					var text = entry.getAttribute("url");
 					document.write("<a href=" + text + ">Visit</a>");
 					document.writeln("</td></tr>");
+					}
 				}
 				document.writeln("</table>");
 			}
@@ -115,6 +117,7 @@
 	            langs.push(langboxes[i].value);
 	        }
 	    }
+	    run;
 	};
 	
 	window.onload = function() {
