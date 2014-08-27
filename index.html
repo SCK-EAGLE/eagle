@@ -92,7 +92,9 @@
 			for (j = 0; j < childs.length; j++){
 				alert(j);
 				child = childs[j];
-				document.write("<h3>" + child.getAttribute("type") + "</h3>");
+				document.write("<h3>")
+				document.write(child.getAttribute("type"));
+				document.writeln("</h3>");
 				alert("test4");
 				entries = child.childNodes;
 				document.writeln("<table border='1'>");
