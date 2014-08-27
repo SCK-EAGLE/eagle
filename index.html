@@ -87,11 +87,13 @@
 		alert("test1");
 		for (i=0; i < c.length; i++){
 			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
-			alert("test2");
 			childs = c[i].childNodes;
+			alert("test2");
 			for (j = 0; j < childs.length; j++){
+				alert("test3");
 				child = childs[j];
 				document.write("<h3>" + child.getAttribute("type") + "</h3>");
+				alert("test4");
 				entries = child.childNodes;
 				document.writeln("<table border='1'>");
 				
