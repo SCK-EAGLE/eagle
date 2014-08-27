@@ -67,13 +67,12 @@
 	   {
 	   if (xhttp.readyState==4 && xhttp.status==200)
 	     {
-	     	alert("success");
+	     	alert(xhttp.statusText);
 	     }
 	   }
 	 xhttp.open("GET",filename,true);
 	 alert("before");
 	 xhttp.send();
-	 alert(xhttp);
 	 alert("after");
 	 return xhttp.responseXML;
 	 } 
