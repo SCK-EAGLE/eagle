@@ -108,18 +108,17 @@
 	}
 	
 	document.checkAddress = function (){
-	    alert("Test");
 	    var langboxes = document.getElementsByName("lang");
-	    langs = [];
+	    document.langs = [];
 	    for (var i = 0; i < langboxes .length; i++){
 	        if (langboxes [i].checked){
 	            langs.push(langboxes[i].value);
 	        }
 	    }
-	    alert(langs);
 	};
 	
 	window.onload = function() {
+		document.langs = [];
     		run();
 	}
 	</script>
