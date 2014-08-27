@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
- <body onload="init();">
+ <body onLoad="run();">
  	
  
 	<script>
@@ -57,7 +57,7 @@
 	 } 
 	 
 	function run() { 
-		
+		document.langs = [];
 		xmlDoc = loadXMLDoc("classified_links.xml");
 	
 		document.writeln("<h1>Disclaimer</h1>");
