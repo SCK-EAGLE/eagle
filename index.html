@@ -77,7 +77,7 @@
 	function run() { 
 		
 		xmlDoc = loadXMLDoc("classified_links.xml");
-		setuplangs(xmlDoc);
+		//setuplangs(xmlDoc);
 		var c = xmlDoc.getElementsByTagName("classification");
 		for (i=0; i < c.length; i++){
 			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
