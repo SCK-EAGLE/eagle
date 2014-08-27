@@ -93,7 +93,7 @@
 				alert(j);
 				child = childs[j];
 				document.write("<h3>"+child.getAttribute("type")+"</h3>");
-				entries = child.childNodes;
+				entries = child.getElementsByTagName("entry");
 				document.writeln("<table border='1'>");
 				document.writeln("<tr><td>");
 				document.writeln("</td><td>");
