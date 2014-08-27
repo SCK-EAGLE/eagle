@@ -71,7 +71,6 @@
 	function run() { 
 		
 		xmlDoc = loadXMLDoc("classified_links.xml");
-		alert(xmlDoc);
 		//setuplangs(xmlDoc);
 		document.writeln("<h1>Disclaimer</h1>");
 		document.writeln("<p><i>");
@@ -85,7 +84,9 @@
 		document.writeln("information will then be reviewed, and put online if it is suitable.");
 		document.writeln("</i></p>");
 		var c = xmlDoc.getElementsByTagName("classification");
+		alert("test1");
 		for (i=0; i < c.length; i++){
+			alert("test2");
 			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
 			childs = c[i].childNodes;
 			for (j = 0; j < childs.length; j++){
