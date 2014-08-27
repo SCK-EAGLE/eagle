@@ -82,9 +82,9 @@
 				document.writeln("</td><td>");
 				document.writeln("</td></tr>");
 				for(k = 0; k < entries.length; k++){
-					alert("testing: " + document.langs);
-					if (document.langs.indexOf(entry.getAttribute("language")) != -1){
+					//alert("testing: " + document.langs);
 					entry = entries[k];
+					if (document.langs.indexOf(entry.getAttribute("language")) != -1){
 					var text;
 					document.writeln("<tr><td>");
 					var text = entry.getAttribute("language");
@@ -117,7 +117,8 @@
 	            document.langs.push(langboxes[i].value);
 	        }
 	    }
-	    alert("rerunning");
+	    document.close();
+	    document.open();
 	    run();
 	};
 	
