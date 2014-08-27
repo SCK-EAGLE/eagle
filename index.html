@@ -24,8 +24,10 @@
 
 		//document.writeln('</form>');
 		var langboxes = document.getElementsByName("lang");
+		document.langs = [];
 		for (var i = 0; i < langboxes .length; i++){
 		    langboxes[i].checked = true;
+		    document.langs.push(langboxes[i].getAttribute("value"));
 		}
 		
 	}
@@ -83,7 +85,8 @@
 				document.writeln("</td><td>");
 				document.writeln("</td></tr>");
 				for(k = 0; k < entries.length; k++){
-					if (langs.indexOf(entry.getAttribute("language")) != -1){
+					alert("testing: " + document.langs);
+					if (document.langs.indexOf(entry.getAttribute("language")) != -1){
 					entry = entries[k];
 					var text;
 					document.writeln("<tr><td>");
