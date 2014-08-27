@@ -70,10 +70,11 @@
 	     	alert(xhttp.statusText);
 	     }
 	   }
+	   alert(xhttp.statusText);
 	 xhttp.open("GET",filename,true);
-	 alert("before");
+	 alert("before: " + xhttp.statusText);
 	 xhttp.send();
-	 alert("after");
+	 alert("after: " + xhttp.statusText);
 	 return xhttp.responseXML;
 	 } 
 	 
