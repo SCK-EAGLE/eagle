@@ -7,15 +7,15 @@
 	document.langs = [];
 	function setuplangs(xmlDoc)
 	{
-		document.writeln('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
+		//document.writeln('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
 		document.writeln("<h2>Filters</h2>");
 		document.writeln("<h3>Languages</h3>");
 		var languages = xmlDoc.getElementsByTagName("language");
 		//document.writeln('<form action="">');
 		document.writeln('<div id="cbs"> </div>');
 		for (i = 0; i < languages.length; i++){
-			document.writeln('<input type="checkbox" name="lang" value="' + languages[i].getAttribute("tag") + '" onclick=checkAddress(this)' + '>' + languages[i].childNodes[0].nodeValue + '<br>');
-			/*alert(i);
+			//document.writeln('<input type="checkbox" name="lang" value="' + languages[i].getAttribute("tag") + '" onclick=checkAddress(this)' + '>' + languages[i].childNodes[0].nodeValue + '<br>');
+			//alert(i);
 			// create the necessary elements
 			var label= document.createElement("label");
 			var description = document.createTextNode(languages[i].childNodes[0].nodeValue);
@@ -24,13 +24,13 @@
 			checkbox.type = "checkbox";    // make the element a checkbox
 			checkbox.name = "lang";      // give it a name we can check on the server side
 			checkbox.value = languages[i].getAttribute("tag");         // make its value "pair"
-			checkbox.onclick = "function(){checkAddress(this);}";
+			checkbox.onclick = function(){checkAddress(this);};
 			
 			label.appendChild(checkbox);   // add the box to the element
 			label.appendChild(description);// add the description to the element
 			label.appendChild(document.createElement("br"));
 			// add the label element to your div
-			document.getElementById('cbs').appendChild(label);*/
+			document.getElementById('cbs').appendChild(label);
 		}
 		
 		//document.writeln('</form>');
