@@ -14,7 +14,7 @@
 		//document.writeln('<form action="">');
 		document.writeln('<div id="cbs"> </div>');
 		for (i = 0; i < languages.length; i++){
-			document.writeln('<input type="checkbox" name="lang" value="' + languages[i].getAttribute("tag") + '" onclick="javascript:alert(1);try{showOld()}catch(e){alert(e)}"' + '>' + languages[i].childNodes[0].nodeValue + '<br>');
+			//document.writeln('<input type="checkbox" name="lang" value="' + languages[i].getAttribute("tag") + '" onclick="javascript:alert(1);try{showOld()}catch(e){alert(e)}"' + '>' + languages[i].childNodes[0].nodeValue + '<br>');
 			//alert(i);
 			// create the necessary elements
 			var label= document.createElement("label");
@@ -24,7 +24,7 @@
 			checkbox.type = "checkbox";    // make the element a checkbox
 			checkbox.name = "lang";      // give it a name we can check on the server side
 			checkbox.value = languages[i].getAttribute("tag");         // make its value "pair"
-			checkbox.onclick = 'javascript:alert(1);try{showOld()}catch(e){alert(e)}';
+			checkbox.onclick = 'try{checkAddress()}catch(e){alert(e)}';
 			
 			label.appendChild(checkbox);   // add the box to the element
 			label.appendChild(description);// add the description to the element
@@ -40,7 +40,7 @@
 		}
 		
 	}
-	function checkAddress(checkbox)
+	function checkAddress()
 	{
 	    var langboxes = document.getElementsByName("lang");
 	    langs = [];
