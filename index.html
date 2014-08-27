@@ -4,6 +4,7 @@
  	<div id="Disclaimer"></div>
  	<div id="Navigation"></div>
  	<div id="Contents"></div>
+ 	
 	<script>
 	document.langs = [];
 	function setuplangs(xmlDoc)
@@ -81,44 +82,44 @@
 		//setuplangs(xmlDoc);
 		var c = xmlDoc.getElementsByTagName("classification");
 		for (i=0; i < c.length; i++){
-			document.getElementById("Contents").innerHTML=("<h2>" + c[i].getAttribute("name") + "</h2>");
+			document.getElementById("Contents").innerHTML+=("<h2>" + c[i].getAttribute("name") + "</h2>");
 			childs = c[i].childNodes;
 			for (j = 0; j < childs.length; j++){
 				child = childs[j];
-				document.getElementById("Contents").innerHTML=("<h3>" + child.getAttribute("type") + "</h3>");
+				document.getElementById("Contents").innerHTML+=("<h3>" + child.getAttribute("type") + "</h3>");
 				entries = child.childNodes;
-				document.getElementById("Contents").innerHTML=("<table border='1'>");
+				document.getElementById("Contents").innerHTML+=("<table border='1'>");
 				
-				document.getElementById("Contents").innerHTML=("<tr><td>");
-				document.getElementById("Contents").innerHTML=("</td><td>");
-				document.getElementById("Contents").innerHTML=("<b>Title</b>");
-				document.getElementById("Contents").innerHTML=("</td><td>");
-				document.getElementById("Contents").innerHTML=("<b>Author</b>");
-				document.getElementById("Contents").innerHTML=("</td><td>");
-				document.getElementById("Contents").innerHTML=("<b>Description</b>");
-				document.getElementById("Contents").innerHTML=("</td><td>");
-				document.getElementById("Contents").innerHTML=("</td></tr>");
+				document.getElementById("Contents").innerHTML+=("<tr><td>");
+				document.getElementById("Contents").innerHTML+=("</td><td>");
+				document.getElementById("Contents").innerHTML+=("<b>Title</b>");
+				document.getElementById("Contents").innerHTML+=("</td><td>");
+				document.getElementById("Contents").innerHTML+=("<b>Author</b>");
+				document.getElementById("Contents").innerHTML+=("</td><td>");
+				document.getElementById("Contents").innerHTML+=("<b>Description</b>");
+				document.getElementById("Contents").innerHTML+=("</td><td>");
+				document.getElementById("Contents").innerHTML+=("</td></tr>");
 				for(k = 0; k < entries.length; k++){
 					entry = entries[k];
 					var text;
-					document.getElementById("Contents").innerHTML=("<tr><td>");
+					document.getElementById("Contents").innerHTML+=("<tr><td>");
 					var text = entry.getAttribute("language");
-					document.getElementById("Contents").innerHTML=(text);
-					document.getElementById("Contents").innerHTML=("</td><td>");
+					document.getElementById("Contents").innerHTML+=(text);
+					document.getElementById("Contents").innerHTML+=("</td><td>");
 					var text = entry.getAttribute("title");
-					document.getElementById("Contents").innerHTML=(text);
-					document.getElementById("Contents").innerHTML=("</td><td>");
+					document.getElementById("Contents").innerHTML+=(text);
+					document.getElementById("Contents").innerHTML+=("</td><td>");
 					var text = entry.getAttribute("author");
-					document.getElementById("Contents").innerHTML=(text);
-					document.getElementById("Contents").innerHTML=("</td><td>");
+					document.getElementById("Contents").innerHTML+=(text);
+					document.getElementById("Contents").innerHTML+=("</td><td>");
 					var text = entry.getAttribute("description");
-					document.getElementById("Contents").innerHTML=(text);
-					document.getElementById("Contents").innerHTML=("</td><td>");
+					document.getElementById("Contents").innerHTML+=(text);
+					document.getElementById("Contents").innerHTML+=("</td><td>");
 					var text = entry.getAttribute("url");
-					document.getElementById("Contents").innerHTML=("<a href=" + text + ">Visit</a>");
-					document.getElementById("Contents").innerHTML=("</td></tr>");
+					document.getElementById("Contents").innerHTML+=("<a href=" + text + ">Visit</a>");
+					document.getElementById("Contents").innerHTML+=("</td></tr>");
 				}
-				document.getElementById("Contents").innerHTML=("</table>");
+				document.getElementById("Contents").innerHTML+=("</table>");
 			}
 		}
 	}
