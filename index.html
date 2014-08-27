@@ -7,7 +7,7 @@
 	document.langs = [];
 	function setuplangs(xmlDoc)
 	{
-		//document.writeln('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
+		document.writeln('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
 		document.writeln("<h2>Filters</h2>");
 		document.writeln("<h3>Languages</h3>");
 		var languages = xmlDoc.getElementsByTagName("language");
@@ -71,7 +71,7 @@
 	function run() { 
 		
 		xmlDoc = loadXMLDoc("classified_links.xml");
-		setuplangs(xmlDoc);
+	
 		document.writeln("<h1>Disclaimer</h1>");
 		document.writeln("<p><i>");
 		document.write("This website contains links to other websites which are hosted and maintained by third");
@@ -83,6 +83,9 @@
 		document.write("address: <a href=\"mailto:eagle_secretariat@rec-lj.si\">eagle_secretariat@rec-lj.si</a>. The ");
 		document.writeln("information will then be reviewed, and put online if it is suitable.");
 		document.writeln("</i></p>");
+		
+		setuplangs(xmlDoc);
+			
 		var c = xmlDoc.getElementsByTagName("classification");
 		for (i=0; i < c.length; i++){
 			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
