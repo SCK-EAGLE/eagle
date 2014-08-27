@@ -117,9 +117,10 @@
 	    document.langs = [];
 	    for (var i = 0; i < langboxes .length; i++){
 	        if (langboxes [i].checked){
-	            langs.push(langboxes[i].value);
+	            document.langs.push(langboxes[i].value);
 	        }
 	    }
+	    alert("rerunning");
 	    run();
 	};
 	
