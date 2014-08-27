@@ -55,7 +55,6 @@
 	function loadXMLDoc(filename)
 	 {
 	 var xhttp;
-	 alert("before");
 	 if (window.XMLHttpRequest)
 	   {
 	   xhttp=new XMLHttpRequest();
@@ -70,9 +69,11 @@
 	     {
 	     }
 	   }
-	   alert("after");
+	   alert("before");
 	 xhttp.open("GET",filename,true);
+	 alert("after");
 	 xhttp.send();
+	 alert("xhttp.responseText");
 	 return xhttp.responseXML;
 	 } 
 	 
