@@ -87,20 +87,14 @@
 		alert("test1");
 		for (i=0; i < c.length; i++){
 			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
-			childs = c[i].getElementsByTagName("entry");
+			childs = c[i].getElementsByTagName("list");
 			alert(childs);
 			for (j = 0; j < childs.length; j++){
 				alert(j);
 				child = childs[j];
-				document.write("<h3>");
-				alert(child.nodeType);
-				document.write(child.getAttribute("type"));
-				alert("test4b");
-				document.writeln("</h3>");
-				alert("test4");
+				document.write("<h3>"+child.getAttribute("type")+"</h3>");
 				entries = child.childNodes;
 				document.writeln("<table border='1'>");
-				
 				document.writeln("<tr><td>");
 				document.writeln("</td><td>");
 				document.write("<b>Title</b>");
