@@ -88,9 +88,9 @@
 		for (i=0; i < c.length; i++){
 			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
 			childs = c[i].childNodes;
-			alert("test2");
+			alert(childs);
 			for (j = 0; j < childs.length; j++){
-				alert("test3");
+				alert(j);
 				child = childs[j];
 				document.write("<h3>" + child.getAttribute("type") + "</h3>");
 				alert("test4");
