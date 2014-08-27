@@ -24,7 +24,7 @@
 			checkbox.type = "checkbox";    // make the element a checkbox
 			checkbox.name = "lang";      // give it a name we can check on the server side
 			checkbox.value = languages[i].getAttribute("tag");         // make its value "pair"
-			checkbox.onclick = 'try{checkAddress()}catch(e){alert(e)}';
+			checkbox.onclick = 'javascript:alert(1);try{checkAddress()}catch(e){alert(e)}';
 			
 			label.appendChild(checkbox);   // add the box to the element
 			label.appendChild(description);// add the description to the element
