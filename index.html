@@ -63,22 +63,15 @@
 	   {
 	   xhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	   }
-	 xhttp.onreadystatechange=function()
-	   {
-	   if (xhttp.readyState==4 && xhttp.status==200)
-	     {
-	     	alert(xhttp.statusText);
-	     }
-	   }
 	 xhttp.open("GET",filename,false);
 	 xhttp.send();
-	 alert(xhttp.responseText);
 	 return xhttp.responseXML;
 	 } 
 	 
 	function run() { 
 		
 		xmlDoc = loadXMLDoc("classified_links.xml");
+		alert(xmlDoc);
 		//setuplangs(xmlDoc);
 		document.writeln("<h1>Disclaimer</h1>");
 		document.writeln("<p><i>");
