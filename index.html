@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
  <body onLoad="run();">
- 	
- 
+ 	<div id="Disclaimer"></div>
+ 	<div id="Navigation"></div>
+ 	<div id="Contents"></div>
 	<script>
 	document.langs = [];
 	function setuplangs(xmlDoc)
 	{
-		document.writeln('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
+		document.getElementById("Contents").innerHTML=('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
 		document.writeln("<h2>Filters</h2>");
 		document.writeln("<h3>Languages</h3>");
 		var languages = xmlDoc.getElementsByTagName("language");
@@ -80,44 +81,44 @@
 		//setuplangs(xmlDoc);
 		var c = xmlDoc.getElementsByTagName("classification");
 		for (i=0; i < c.length; i++){
-			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
+			document.getElementById("Contents").innerHTML=("<h2>" + c[i].getAttribute("name") + "</h2>");
 			childs = c[i].childNodes;
 			for (j = 0; j < childs.length; j++){
 				child = childs[j];
-				document.write("<h3>" + child.getAttribute("type") + "</h3>");
+				document.getElementById("Contents").innerHTML=("<h3>" + child.getAttribute("type") + "</h3>");
 				entries = child.childNodes;
-				document.writeln("<table border='1'>");
+				document.getElementById("Contents").innerHTML=("<table border='1'>");
 				
-				document.writeln("<tr><td>");
-				document.writeln("</td><td>");
-				document.write("<b>Title</b>");
-				document.writeln("</td><td>");
-				document.write("<b>Author</b>");
-				document.writeln("</td><td>");
-				document.write("<b>Description</b>");
-				document.writeln("</td><td>");
-				document.writeln("</td></tr>");
+				document.getElementById("Contents").innerHTML=("<tr><td>");
+				document.getElementById("Contents").innerHTML=("</td><td>");
+				document.getElementById("Contents").innerHTML=("<b>Title</b>");
+				document.getElementById("Contents").innerHTML=("</td><td>");
+				document.getElementById("Contents").innerHTML=("<b>Author</b>");
+				document.getElementById("Contents").innerHTML=("</td><td>");
+				document.getElementById("Contents").innerHTML=("<b>Description</b>");
+				document.getElementById("Contents").innerHTML=("</td><td>");
+				document.getElementById("Contents").innerHTML=("</td></tr>");
 				for(k = 0; k < entries.length; k++){
 					entry = entries[k];
 					var text;
-					document.writeln("<tr><td>");
+					document.getElementById("Contents").innerHTML=("<tr><td>");
 					var text = entry.getAttribute("language");
-					document.write(text);
-					document.writeln("</td><td>");
+					document.getElementById("Contents").innerHTML=(text);
+					document.getElementById("Contents").innerHTML=("</td><td>");
 					var text = entry.getAttribute("title");
-					document.write(text);
-					document.writeln("</td><td>");
+					document.getElementById("Contents").innerHTML=(text);
+					document.getElementById("Contents").innerHTML=("</td><td>");
 					var text = entry.getAttribute("author");
-					document.write(text);
-					document.writeln("</td><td>");
+					document.getElementById("Contents").innerHTML=(text);
+					document.getElementById("Contents").innerHTML=("</td><td>");
 					var text = entry.getAttribute("description");
-					document.write(text);
-					document.writeln("</td><td>");
+					document.getElementById("Contents").innerHTML=(text);
+					document.getElementById("Contents").innerHTML=("</td><td>");
 					var text = entry.getAttribute("url");
-					document.write("<a href=" + text + ">Visit</a>");
-					document.writeln("</td></tr>");
+					document.getElementById("Contents").innerHTML=("<a href=" + text + ">Visit</a>");
+					document.getElementById("Contents").innerHTML=("</td></tr>");
 				}
-				document.writeln("</table>");
+				document.getElementById("Contents").innerHTML=("</table>");
 			}
 		}
 	}
