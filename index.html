@@ -5,6 +5,17 @@
  
 	<script>
 	document.langs = [];
+	function checkAddress()
+	{
+	    var langboxes = document.getElementsByName("lang");
+	    langs = [];
+	    for (var i = 0; i < langboxes .length; i++){
+	        if (langboxes [i].checked){
+	            langs.push(langboxes[i].value);
+	        }
+	    }
+	    alert(langs);
+	}
 	function setuplangs(xmlDoc)
 	{
 		//document.writeln('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
@@ -39,17 +50,6 @@
 		    langboxes[i].checked = true;
 		}
 		
-	}
-	function checkAddress()
-	{
-	    var langboxes = document.getElementsByName("lang");
-	    langs = [];
-	    for (var i = 0; i < langboxes .length; i++){
-	        if (langboxes [i].checked){
-	            langs.push(langboxes[i].value);
-	        }
-	    }
-	    alert(langs);
 	}
 	
 	function loadXMLDoc(filename)
