@@ -107,22 +107,19 @@
 		}
 	}
 	
+	document.checkAddress = function (){
+	    alert("Test");
+	    var langboxes = document.getElementsByName("lang");
+	    langs = [];
+	    for (var i = 0; i < langboxes .length; i++){
+	        if (langboxes [i].checked){
+	            langs.push(langboxes[i].value);
+	        }
+	    }
+	    alert(langs);
+	};
+	
 	window.onload = function() {
-		document.checkAddress = function (){
-		alert("Test");
-		    var langboxes = document.getElementsByName("lang");
-		    langs = [];
-		    for (var i = 0; i < langboxes .length; i++){
-		        if (langboxes [i].checked){
-		            langs.push(langboxes[i].value);
-		        }
-		    }
-		    alert(langs);
-		};
-		try{document.checkAddress();}catch(e){alert(e);}
-		alert("test");
-		try{document.checkAddress;}catch(e){alert(e);}
-		alert("workds");
     		run();
 	}
 	</script>
