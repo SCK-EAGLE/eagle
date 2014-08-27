@@ -49,9 +49,7 @@
 	 } 
 	 
 	function run() { 
-		document.langs = [];
-		xmlDoc = loadXMLDoc("classified_links.xml");
-	
+		
 		document.writeln("<h1>Disclaimer</h1>");
 		document.writeln("<p><i>");
 		document.write("This website contains links to other websites which are hosted and maintained by third");
@@ -64,7 +62,6 @@
 		document.writeln("information will then be reviewed, and put online if it is suitable.");
 		document.writeln("</i></p>");
 		
-		setuplangs(xmlDoc);
 			
 		var c = xmlDoc.getElementsByTagName("classification");
 		for (i=0; i < c.length; i++){
@@ -124,8 +121,12 @@
 	    run();
 	};
 	
+	var xmlDoc;
+	
 	window.onload = function() {
 		document.langs = [];
+		xmlDoc = loadXMLDoc("classified_links.xml");
+		setuplangs(xmlDoc);
     		run();
 	}
 	</script>
