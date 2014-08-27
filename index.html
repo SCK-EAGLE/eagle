@@ -84,13 +84,10 @@
 		document.writeln("information will then be reviewed, and put online if it is suitable.");
 		document.writeln("</i></p>");
 		var c = xmlDoc.getElementsByTagName("classification");
-		alert("test1");
 		for (i=0; i < c.length; i++){
 			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
 			childs = c[i].getElementsByTagName("list");
-			alert(childs);
 			for (j = 0; j < childs.length; j++){
-				alert(j);
 				child = childs[j];
 				document.write("<h3>"+child.getAttribute("type")+"</h3>");
 				entries = child.getElementsByTagName("entry");
