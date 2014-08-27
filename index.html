@@ -26,7 +26,7 @@
 		//document.writeln('<form action="">');
 		document.writeln('<div id="cbs"> </div>');
 		for (i = 0; i < languages.length; i++){
-			document.writeln('<input type="checkbox" name="lang" value="' + languages[i].getAttribute("tag") + '" onclick="try{function(){checkAddress();}}catch(e){alert(e)}"' + '>' + languages[i].childNodes[0].nodeValue + '<br>');
+			document.writeln('<input type="checkbox" name="lang" value="' + languages[i].getAttribute("tag") + '" onclick="javascript:alert("clicked");try{function(){checkAddress();}}catch(e){alert(e)}"' + '>' + languages[i].childNodes[0].nodeValue + '<br>');
 		}
 		
 		
