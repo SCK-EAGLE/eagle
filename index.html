@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
  <body onLoad="run();">
- 	<div id="Disclaimer"></div>
- 	<div id="Navigation"></div>
- 	<div id="Contents"></div>
  	
+ 
 	<script>
 	document.langs = [];
 	function setuplangs(xmlDoc)
 	{
-		document.getElementById("Contents").innerHTML=('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
+		document.writeln('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
 		document.writeln("<h2>Filters</h2>");
 		document.writeln("<h3>Languages</h3>");
 		var languages = xmlDoc.getElementsByTagName("language");
@@ -80,46 +78,57 @@
 		
 		xmlDoc = loadXMLDoc("classified_links.xml");
 		//setuplangs(xmlDoc);
+		document.writeln("<h1>Disclaimer</h1>");
+		document.writeln("<p><i>");
+		document.write("This website contains links to other websites which are hosted and maintained by third");
+		document.write("parties. EAGLE has no control over the content or security of any such external website. "); 
+		document.write("Linking to external websites is at the own risk of the user, and EAGLE cannot be held ");
+		document.write("liable as to their content. EAGLE can also not be liable for any loss or damage arising ");
+		document.write("from the use of such third party websites.<br>If you want to provide internet sources that ");
+		document.write("can be an added value to this project, please send this information to the following e-mail ");
+		document.write("address: <a href=\"eagle_secretariat@rec-lj.si\">eagle_secretariat@rec-lj.si</a>. The ");
+		document.writeln("information will then be reviewed, and put online if it is suitable.");
+		document.writeln("</i></p>");
 		var c = xmlDoc.getElementsByTagName("classification");
 		for (i=0; i < c.length; i++){
-			document.getElementById("Contents").insertAdjacentHTML('beforeend', "<h2>" + c[i].getAttribute("name") + "</h2>");
+			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
 			childs = c[i].childNodes;
 			for (j = 0; j < childs.length; j++){
 				child = childs[j];
-				document.getElementById("Contents").insertAdjacentHTML('beforeend', "<h3>" + child.getAttribute("type") + "</h3>");
+				document.write("<h3>" + child.getAttribute("type") + "</h3>");
 				entries = child.childNodes;
-				document.getElementById("Contents").insertAdjacentHTML('beforeend', "<table border='1'>");
+				document.writeln("<table border='1'>");
 				
-				document.getElementById("Contents").insertAdjacentHTML('beforeend', "<tr><td>");
-				document.getElementById("Contents").insertAdjacentHTML('beforeend', "</td><td>");
-				document.getElementById("Contents").insertAdjacentHTML('beforeend', "<b>Title</b>");
-				document.getElementById("Contents").insertAdjacentHTML('beforeend', "</td><td>");
-				document.getElementById("Contents").insertAdjacentHTML('beforeend', "<b>Author</b>");
-				document.getElementById("Contents").insertAdjacentHTML('beforeend', "</td><td>");
-				document.getElementById("Contents").insertAdjacentHTML('beforeend', "<b>Description</b>");
-				document.getElementById("Contents").insertAdjacentHTML('beforeend', "</td><td>");
-				document.getElementById("Contents").insertAdjacentHTML('beforeend', "</td></tr>");
+				document.writeln("<tr><td>");
+				document.writeln("</td><td>");
+				document.write("<b>Title</b>");
+				document.writeln("</td><td>");
+				document.write("<b>Author</b>");
+				document.writeln("</td><td>");
+				document.write("<b>Description</b>");
+				document.writeln("</td><td>");
+				document.writeln("</td></tr>");
 				for(k = 0; k < entries.length; k++){
 					entry = entries[k];
 					var text;
-					document.getElementById("Contents").insertAdjacentHTML('beforeend', "<tr><td>");
+					document.writeln("<tr><td>");
 					var text = entry.getAttribute("language");
-					document.getElementById("Contents").insertAdjacentHTML('beforeend', text);
-					document.getElementById("Contents").insertAdjacentHTML('beforeend', "</td><td>");
+					document.write(text);
+					document.writeln("</td><td>");
 					var text = entry.getAttribute("title");
-					document.getElementById("Contents").insertAdjacentHTML('beforeend', text);
-					document.getElementById("Contents").insertAdjacentHTML('beforeend', "</td><td>");
+					document.write(text);
+					document.writeln("</td><td>");
 					var text = entry.getAttribute("author");
-					document.getElementById("Contents").insertAdjacentHTML('beforeend', text);
-					document.getElementById("Contents").insertAdjacentHTML('beforeend', "</td><td>");
+					document.write(text);
+					document.writeln("</td><td>");
 					var text = entry.getAttribute("description");
-					document.getElementById("Contents").insertAdjacentHTML('beforeend', text);
-					document.getElementById("Contents").insertAdjacentHTML('beforeend', "</td><td>");
+					document.write(text);
+					document.writeln("</td><td>");
 					var text = entry.getAttribute("url");
-					document.getElementById("Contents").insertAdjacentHTML('beforeend', "<a href=" + text + ">Visit</a>");
-					document.getElementById("Contents").insertAdjacentHTML('beforeend', "</td></tr>");
+					document.write("<a href=" + text + ">Visit</a>");
+					document.writeln("</td></tr>");
 				}
-				document.getElementById("Contents").insertAdjacentHTML('beforeend', "</table>");
+				document.writeln("</table>");
 			}
 		}
 	}
