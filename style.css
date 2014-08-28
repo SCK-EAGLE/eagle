@@ -73,12 +73,14 @@ a:active {
     background-color: #99CCFF;
     color: white;
     padding: 0px;
+    display:block;
 }
 
 .lt:hover .la{
     background-color: #99CCFF;
     color: white;
     padding: 0px;
+    display:block;
 }
 
 .la:link {
