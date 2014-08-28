@@ -10,9 +10,6 @@
  	</div>
  
 	<script>
-	alert("container.nodeValue");
-	
-	
 	document.write=function(s){
 		var element = document.getElementById("maindiv");
 		element.insertAdjacentHTML("beforeend", s);
@@ -26,7 +23,6 @@
 	document.addCreatedElement=function(element){
 		var container = document.getElementById("maindiv");
 		container.appendChild(element);
-		alert(container.nodeValue);
 	};
 	
 	function setuplangs(xmlDoc)
@@ -70,7 +66,6 @@
 	 }
 	 
 	function run() { 
-		alert("test");
 		document.writeln("<h1>Disclaimer</h1>");
 		document.writeln("<p><i>");
 		document.write("This website contains links to other websites which are hosted and maintained by third");
@@ -85,7 +80,6 @@
 		
 			
 		var c = xmlDoc.getElementsByTagName("classification");
-		alert("test");
 		for (i=0; i < c.length; i++){
 			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
 			childs = c[i].getElementsByTagName("list");
@@ -93,46 +87,47 @@
 				child = childs[j];
 				document.write("<h3>"+child.getAttribute("type")+"</h3>");
 				entries = child.getElementsByTagName("entry");
-				alert("test1");
 				var table = document.createElement('table');
-				alert("test2");
   				table.setAttribute('border', '1');
+  				
+  				var tablehtml;
 
-				table.innerHTML = "<table border='1'>";
-				table.innerHTML += "<tr><td>";
-				table.innerHTML +=("</td><td>");
-				table.innerHTML +=("<b>Title</b>");
-				table.innerHTML +=("</td><td>");
-				table.innerHTML +=("<b>Author</b>");
-				table.innerHTML +=("</td><td>");
-				table.innerHTML +=("<b>Description</b>");
-				table.innerHTML +=("</td><td>");
-				table.innerHTML +=("</td></tr>");
+				tablehtml = "<table border='1'>";
+				tablehtml += "<tr><td>";
+				tablehtml +=("</td><td>");
+				tablehtml +=("<b>Title</b>");
+				tablehtml +=("</td><td>");
+				tablehtml +=("<b>Author</b>");
+				tablehtml +=("</td><td>");
+				tablehtml +=("<b>Description</b>");
+				tablehtml +=("</td><td>");
+				tablehtml +=("</td></tr>");
 				for(k = 0; k < entries.length; k++){
 					//alert("testing: " + document.langs);
 					entry = entries[k];
 					if (document.langs.indexOf(entry.getAttribute("language")) != -1){
 					var text;
-					table.innerHTML +=("<tr><td>");
+					tablehtml +=("<tr><td>");
 					var text = entry.getAttribute("language");
-					table.innerHTML +=(text);
-					table.innerHTML +=("</td><td>");
+					tablehtml +=(text);
+					tablehtml +=("</td><td>");
 					var text = entry.getAttribute("title");
-					table.innerHTML +=(text);
-					table.innerHTML +=("</td><td>");
+					tablehtml +=(text);
+					tablehtml +=("</td><td>");
 					var text = entry.getAttribute("author");
-					table.innerHTML +=(text);
-					table.innerHTML +=("</td><td>");
+					tablehtml +=(text);
+					tablehtml +=("</td><td>");
 					var text = entry.getAttribute("description");
-					table.innerHTML +=(text);
-					table.innerHTML +=("</td><td>");
+					tablehtml +=(text);
+					tablehtml +=("</td><td>");
 					var text = entry.getAttribute("url");
-					table.innerHTML +=("<a href=" + text + ">Visit</a>");
-					table.innerHTML +=("</td></tr>");
+					tablehtml +=("<a href=" + text + ">Visit</a>");
+					tablehtml +=("</td></tr>");
 					}
 				}
-				table.innerHTML +=("</table>");
-				document.addCreatedElement(table);
+				tablehtml +=("</table>");
+				//document.addCreatedElement(table);
+				document.writeln(tablehtml);
 			}
 		}
 	}
@@ -153,7 +148,6 @@
 	var xmlDoc;
 	
 	window.onload = function() {
-		alert("test");
 		document.langs = [];
 		xmlDoc = loadXMLDoc("classified_links.xml");
 		setuplangs(xmlDoc);
