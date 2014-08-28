@@ -55,15 +55,16 @@ a:active {
     color: black;
 }
 
-/*.lt {
+.lt {
     background-color: #99CCFF;
-    color: white;
-}*/
+    color: black;
+    width: 5%;
+    text-align:center;
+}
 
 .lt:hover{
     background-color: #99CCFF;
     color: white;
-    width: 8%;
 }
 
 .la {
