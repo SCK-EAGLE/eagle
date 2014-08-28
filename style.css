@@ -18,3 +18,16 @@ h1 {
 	color: white;
 	text-align: center;
 }
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: #99CCFF;
+    color: white;
+}
