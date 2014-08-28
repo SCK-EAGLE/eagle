@@ -1,22 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Annotations>
-  <Annotation about="en.wikipedia.org/">
+  <Annotation about="http://www.who.int/ionizing_radiation/about/what_is_ir/en/">
     <Label name="mylabel" />
   </Annotation>
-  <Annotation about="twitter.com/">
+  <Annotation about="http://www.nrc.gov/about-nrc/radiation/rad-health-effects.html">
     <Label name="mylabel" />
   </Annotation>
-  http://www.who.int/ionizing_radiation/about/what_is_ir/en/
-  <Annotation about="twitter.com/">
+  <Annotation about="http://www.nrc.gov/about-nrc/radiation/rad-health-effects.html">
     <Label name="mylabel" />
   </Annotation>
-  <Annotation about="twitter.com/">
+  <Annotation about="http://www.fanc.fgov.be/nl/page/646.aspx">
     <Label name="mylabel" />
   </Annotation>
-  <Annotation about="twitter.com/">
+  <Annotation about="http://www.fanc.fgov.be/fr/page/646.aspx">
     <Label name="mylabel" />
   </Annotation>
-  <Annotation about="twitter.com/">
+  <Annotation about="http://en.wikipedia.org/wiki/Ionizing_radiation">
     <Label name="mylabel" />
   </Annotation>
+  <Annotation about="https://nl.wikipedia.org/wiki/Ioniserende_straling">
+    <Label name="mylabel" />
+  </Annotation>
+  <Annotation about="https://fr.wikipedia.org/wiki/Rayonnement_ionisant">
+    <Label name="mylabel" />
+  </Annotation>
+  <Annotation about="http://www.fanc.fgov.be/nl/page/homepage-agence-federale-de-controle-nucleaire-afcn/1.aspx">
+    <Label name="mylabel" />
+  </Annotation>
+  <Annotation about="http://www.fanc.fgov.be/fr/page/homepage-federaal-agentschap-voor-nucleaire-controle-fanc/1.aspx">
+    <Label name="mylabel" />
+  </Annotation>
+  <Annotation about="http://www.radiationanswers.org/">
+    <Label name="mylabel" />
+  </Annotation>
+  <Annotation about="http://hps.org/hpspublications/radiationfactsheets.html">
+    <Label name="mylabel" />
+  </Annotation>
+  <Annotation about="https://www.iaea.org/Publications/Booklets/RadPeopleEnv/pdf/chapter_8.pdf">
+    <Label name="mylabel" />
+  </Annotation>
+  <Annotation about="http://www.cancer.gov/cancertopics/factsheet/Therapy/radiation">
+    <Label name="mylabel" />
+  </Annotation>
+  <Annotation about="http://chernobylgallery.com/chernobyl-disaster/radiation-levels/">
+    <Label name="mylabel" />
+  </Annotation>
+  
 </Annotations>
