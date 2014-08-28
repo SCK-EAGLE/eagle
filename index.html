@@ -5,19 +5,22 @@
 	<title>Ionizing Radiation Information HUB</title>
 </head>
  <body>
+ 	<div id="headdiv">
+ 		
+ 	</div>
  	<div id="maindiv">
  		
  	</div>
  
 	<script>
 	document.write=function(s){
-		var element = document.getElementById("maindiv");
+		var element = document.getElementById(document.position);
 		element.insertAdjacentHTML("beforeend", s);
 	};
 	document.writeln=function(s){
 		//var scripts = document.getElementsByTagName('script');
 	    	//scripts[scripts.length-1].insertAdjacentHTML("beforebegin", s);
-	    	var element = document.getElementById("maindiv");
+	    	var element = document.getElementById(document.position);
 		element.insertAdjacentHTML("beforeend", s);
 	};
 	document.addCreatedElement=function(element){
@@ -66,6 +69,8 @@
 	 }
 	 
 	function run() { 
+		document.position="headdiv";
+		document.getElementById(document.position).innerHTML = "";
 		document.writeln("<h1>Disclaimer</h1>");
 		document.writeln("<p><i>");
 		document.write("This website contains links to other websites which are hosted and maintained by third");
@@ -78,7 +83,8 @@
 		document.writeln("information will then be reviewed, and put online if it is suitable.");
 		document.writeln("</i></p>");
 		
-			
+		document.position="maindiv";
+		document.getElementById(document.position).innerHTML = "";
 		var c = xmlDoc.getElementsByTagName("classification");
 		for (i=0; i < c.length; i++){
 			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
@@ -146,6 +152,7 @@
 	var xmlDoc;
 	
 	window.onload = function() {
+		document.position = "headdiv";
 		document.langs = [];
 		xmlDoc = loadXMLDoc("classified_links.xml");
 		setuplangs(xmlDoc);
