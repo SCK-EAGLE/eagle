@@ -10,7 +10,7 @@
 				url="http://www.who.int/ionizing_radiation/about/what_is_ir/en/"
 				title="What is Ionizing Radiation?"
 				author="World Health Organization"
-				desctiption=""/>
+				description=""/>
 			<entry 
 				language="EN"
 				url="http://www.nrc.gov/about-nrc/radiation/rad-health-effects.html"
@@ -39,13 +39,13 @@
 				url="http://www.fanc.fgov.be/nl/page/646.aspx"
 				title="Radon: gevaren en bescherming"
 				author="Federaal agentschap voor nucleaire controle"
-				desctiption="Informatie en tips voor bescherming tegen radon besmetting"/>
+				description="Informatie en tips voor bescherming tegen radon besmetting"/>
 			<entry 
 				language="FR"
 				url="http://www.fanc.fgov.be/fr/page/646.aspx"
 				title="Radon: dangers et protection"
 				author="Agence federale de controle nucleaire"
-				desctiption="Informations et conseils pour la protection contre la contamination au radon"/>
+				description="Informations et conseils pour la protection contre la contamination au radon"/>
 		</list>
 		<list application="information">
 			
@@ -72,14 +72,14 @@
 				url="http://www.fanc.fgov.be/nl/page/homepage-agence-federale-de-controle-nucleaire-afcn/1.aspx"
 				title="Home pagina van het FANC"
 				author="World Health Organization"
-				desctiption="Het FANC bevordert de doeltreffende bescherming van de bevolking, werknemers
+				description="Het FANC bevordert de doeltreffende bescherming van de bevolking, werknemers
 				en het leefmilieu tegen het gevaar van ioniserende straling"/>
 			<entry 
 				language="EN"
 				url="http://www.fanc.fgov.be/fr/page/homepage-federaal-agentschap-voor-nucleaire-controle-fanc/1.aspx"
 				title="Page d'accueil de l'AFCN"
 				author="World Health Organization"
-				desctiption="L'AFCN promeut la protection efficace de la population, des travailleurs et de l'environnement
+				description="L'AFCN promeut la protection efficace de la population, des travailleurs et de l'environnement
 				contre les dangers des rayonnements ionisants"/>
 			<entry
 				language="EN"
@@ -100,13 +100,13 @@
 				url="https://www.iaea.org/Publications/Booklets/RadPeopleEnv/pdf/chapter_8.pdf"
 				title="Medical uses of radiation"
 				author="IAEA"
-				desctiption=""/>
+				description=""/>
 			<entry 
 			    language="EN"
 				url="http://www.cancer.gov/cancertopics/factsheet/Therapy/radiation"
 				title="Radiation Therapy for Cancer"
 				author="National Cancer Institute"
-				desctiption="Web page providing a detailed explanation of using radiation to combat cancer"/>
+				description="Web page providing a detailed explanation of using radiation to combat cancer"/>
 		</list>
 		<list application="disasters">
 			<entry 
@@ -114,7 +114,7 @@
 				url="http://chernobylgallery.com/chernobyl-disaster/radiation-levels/"
 				title="Radiation Levels Now"
 				author="The Chernobyl Gallery"
-				desctiption="Informative website about the radiation levels in Chernobyl then and now."/>
+				description="Informative website about the radiation levels in Chernobyl then and now."/>
 		</list>
 	</classification>
 </EAGLE>

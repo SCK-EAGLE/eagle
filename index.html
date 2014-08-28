@@ -27,24 +27,43 @@
 	 } 
 	 
 	function run() { 
-		alert("first");
 		xmlDoc = loadXMLDoc("classified_links.xml");
-		alert("second");
 		
 		document.write("<table border='1'>");
 		var x=xmlDoc.getElementsByTagName("entry");
 		for (i=0;i<x.length;i++)
 		   { 
+		   var text;
 		   document.write("<tr><td>");
-		   document.write(x[i].getElementsByTagName("language")[0].childNodes[0].nodeValue);
+		   var text = x[i].getAttribute("language");
+		   if (text == "null"){
+		   	text = "";
+		   }
+		   document.write(text);
 		   document.write("</td><td>");
-		   document.write(x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue);
+		   var text = x[i].getAttribute("title");
+		   if (text == "null"){
+		   	text = "";
+		   }
+		   document.write(text);
 		   document.write("</td><td>");
-		   document.write(x[i].getElementsByTagName("author")[0].childNodes[0].nodeValue);
+		   var text = x[i].getAttribute("author");
+		   if (text == "null"){
+		   	text = "";
+		   }
+		   document.write(text);
 		   document.write("</td><td>");
-		   document.write(x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue);
+		   var text = x[i].getAttribute("description");
+		   if (text == "null"){
+		   	text = "";
+		   }
+		   document.write(text);
 		   document.write("</td><td>");
-		   document.write(x[i].getElementsByTagName("url")[0].childNodes[0].nodeValue);
+		   var text = x[i].getAttribute("url");
+		   if (text == "null"){
+		   	text = "";
+		   }
+		   document.write("<a href=\"" + text + "\">Visit</a>");
 		   document.write("</td></tr>");
 		   }
 		document.write("</table>");
