@@ -7,7 +7,8 @@ table {
 }
 
 .disclaimer {
-	background-color:#B4009E;
+	border-radius: 30px;
+	background-color:#99CCFF;
 	color:#ffffff;
 }
 
