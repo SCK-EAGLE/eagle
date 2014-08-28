@@ -68,7 +68,6 @@ a:active {
 }
 
 .la {
-	display: table-cell;
     text-decoration: none;
     color:inherit;
 }
