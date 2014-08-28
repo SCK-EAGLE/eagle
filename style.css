@@ -62,7 +62,8 @@ a:active {
 
 .lt:hover{
     background-color: #99CCFF;
-    color: white;	
+    color: white;
+    width: 8%;
 }
 
 .la {
