@@ -15,13 +15,13 @@
 	
 	document.write=function(s){
 		var element = document.getElementById("maindiv");
-		element.insertAdjacentHTML("beforebegin", s);
+		element.insertAdjacentHTML("beforeend", s);
 	};
 	document.writeln=function(s){
 		//var scripts = document.getElementsByTagName('script');
 	    	//scripts[scripts.length-1].insertAdjacentHTML("beforebegin", s);
 	    	var element = document.getElementById("maindiv");
-		element.insertAdjacentHTML("beforebegin", s);
+		element.insertAdjacentHTML("beforeend", s);
 	};
 	document.addCreatedElement=function(element){
 		var container = document.getElementById("maindiv");
