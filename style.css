@@ -60,11 +60,13 @@ a:active {
     color: black;
     width: 5%;
     text-align:center;
+    padding: 0px;
 }
 
 .lt:hover{
     background-color: #99CCFF;
     color: white;
+    padding: 0px;
 }
 
 .lt:hover a{
