@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <EAGLE>
+	<language tag="NL">Nederlands</language>
+	<language tag="FR">Francais</language>
+	<language tag="EN">English</language>
 	<classification 
 		type="level_of_detail"
-		name="Order by detail">
-		<list level_of_detail="introductory">
+		name="Order by detail"
+		language="ENG" >
+		<list type="introductory">
 			<entry 
 				difficulty="difficulty.expert"
 				language="EN"
@@ -19,14 +23,14 @@
 				description="Notice the image and chart at the bottom. A 3-millirem exposure is equally likely to kill you as smoking one cigarette. Living near or working on a nuclear powerplant
 				for a full year results in 0.10 millirem. It can be concluded that smoking one cigarette is about as dangerous as living near or on a nuclear powerplant for 30 years. "/>
 		</list>
-		<list level_of_detail="scientific">
+		<list type="scientific">
 			
 		</list>
 	</classification>
 	<classification 
 		type="application"
-		name="Order by application" >
-		<list application="dangers and protection">
+		name="By application" >
+		<list type="dangers and protection">
 			<entry 
 				language="EN"
 				url="http://www.nrc.gov/about-nrc/radiation/rad-health-effects.html"
@@ -47,7 +51,7 @@
 				author="Agence federale de controle nucleaire"
 				description="Informations et conseils pour la protection contre la contamination au radon"/>
 		</list>
-		<list application="information">
+		<list type="information">
 			
 			<entry
 				language="EN"
@@ -94,7 +98,7 @@
 				author="Health Physics Today"
 				description="Web page containing fact sheets on many common and controversial topics concerning radiation" />
 		</list>
-		<list application="medical">
+		<list type="medical">
 			<entry 
 			    language="EN"
 				url="https://www.iaea.org/Publications/Booklets/RadPeopleEnv/pdf/chapter_8.pdf"
@@ -108,7 +112,7 @@
 				author="National Cancer Institute"
 				description="Web page providing a detailed explanation of using radiation to combat cancer"/>
 		</list>
-		<list application="disasters">
+		<list type="incidents and accidents">
 			<entry 
 				language="EN"
 				url="http://chernobylgallery.com/chernobyl-disaster/radiation-levels/"

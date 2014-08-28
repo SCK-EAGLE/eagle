@@ -1,9 +1,37 @@
 <!DOCTYPE html>
 <html>
- <body onLoad="run();">
-	<p id="demo"> test </p>
+<head>
+	<title>Ionizing Radiation Information HUB</title>
+</head>
+ <body>
+ 	
  
-	<script type="text/javascript">
+	<script>
+	
+	function setuplangs(xmlDoc)
+	{
+		//document.writeln('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
+		document.writeln("<h2>Filters</h2>");
+		document.writeln("<h3>Languages</h3>");
+		var languages = xmlDoc.getElementsByTagName("language");
+		//document.writeln('<form action="">');
+		document.writeln('<div id="cbs"> </div>');
+		for (i = 0; i < languages.length; i++){
+			document.writeln('<input type="checkbox" name="lang" value="' + languages[i].getAttribute("tag") + '" onclick="javascript:try{document.checkAddress()}catch(e){alert(e)}"' + '>' + languages[i].childNodes[0].nodeValue + '<br>');
+		}
+		
+		
+
+		//document.writeln('</form>');
+		var langboxes = document.getElementsByName("lang");
+		document.langs = [];
+		for (var i = 0; i < langboxes .length; i++){
+		    langboxes[i].checked = true;
+		    document.langs.push(langboxes[i].getAttribute("value"));
+		}
+		
+	}
+	
 	function loadXMLDoc(filename)
 	 {
 	 var xhttp;
@@ -15,58 +43,92 @@
 	   {
 	   xhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	   }
-	 xhttp.onreadystatechange=function()
-	   {
-	   if (xhttp.readyState==4 && xhttp.status==200)
-	     {
-	     }
-	   }
-	 xhttp.open("GET",filename,true);
+	 xhttp.open("GET",filename,false);
 	 xhttp.send();
 	 return xhttp.responseXML;
 	 } 
 	 
 	function run() { 
-		xmlDoc = loadXMLDoc("classified_links.xml");
 		
-		document.write("<table border='1'>");
-		var x=xmlDoc.getElementsByTagName("entry");
-		for (i=0;i<x.length;i++)
-		   { 
-		   var text;
-		   document.write("<tr><td>");
-		   var text = x[i].getAttribute("language");
-		   if (text == "null"){
-		   	text = "";
-		   }
-		   document.write(text);
-		   document.write("</td><td>");
-		   var text = x[i].getAttribute("title");
-		   if (text == "null"){
-		   	text = "";
-		   }
-		   document.write(text);
-		   document.write("</td><td>");
-		   var text = x[i].getAttribute("author");
-		   if (text == "null"){
-		   	text = "";
-		   }
-		   document.write(text);
-		   document.write("</td><td>");
-		   var text = x[i].getAttribute("description");
-		   if (text == "null"){
-		   	text = "";
-		   }
-		   document.write(text);
-		   document.write("</td><td>");
-		   var text = x[i].getAttribute("url");
-		   if (text == "null"){
-		   	text = "";
-		   }
-		   document.write("<a href=\"" + text + "\">Visit</a>");
-		   document.write("</td></tr>");
-		   }
-		document.write("</table>");
+		document.writeln("<h1>Disclaimer</h1>");
+		document.writeln("<p><i>");
+		document.write("This website contains links to other websites which are hosted and maintained by third");
+		document.write("parties. EAGLE has no control over the content or security of any such external website. "); 
+		document.write("Linking to external websites is at the own risk of the user, and EAGLE cannot be held ");
+		document.write("liable as to their content. EAGLE can also not be liable for any loss or damage arising ");
+		document.write("from the use of such third party websites.<br>If you want to provide internet sources that ");
+		document.write("can be an added value to this project, please send this information to the following e-mail ");
+		document.write("address: <a href=\"mailto:eagle_secretariat@rec-lj.si\">eagle_secretariat@rec-lj.si</a>. The ");
+		document.writeln("information will then be reviewed, and put online if it is suitable.");
+		document.writeln("</i></p>");
+		
+			
+		var c = xmlDoc.getElementsByTagName("classification");
+		for (i=0; i < c.length; i++){
+			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
+			childs = c[i].getElementsByTagName("list");
+			for (j = 0; j < childs.length; j++){
+				child = childs[j];
+				document.write("<h3>"+child.getAttribute("type")+"</h3>");
+				entries = child.getElementsByTagName("entry");
+				document.writeln("<table border='1'>");
+				document.writeln("<tr><td>");
+				document.writeln("</td><td>");
+				document.write("<b>Title</b>");
+				document.writeln("</td><td>");
+				document.write("<b>Author</b>");
+				document.writeln("</td><td>");
+				document.write("<b>Description</b>");
+				document.writeln("</td><td>");
+				document.writeln("</td></tr>");
+				for(k = 0; k < entries.length; k++){
+					//alert("testing: " + document.langs);
+					entry = entries[k];
+					if (document.langs.indexOf(entry.getAttribute("language")) != -1){
+					var text;
+					document.writeln("<tr><td>");
+					var text = entry.getAttribute("language");
+					document.write(text);
+					document.writeln("</td><td>");
+					var text = entry.getAttribute("title");
+					document.write(text);
+					document.writeln("</td><td>");
+					var text = entry.getAttribute("author");
+					document.write(text);
+					document.writeln("</td><td>");
+					var text = entry.getAttribute("description");
+					document.write(text);
+					document.writeln("</td><td>");
+					var text = entry.getAttribute("url");
+					document.write("<a href=" + text + ">Visit</a>");
+					document.writeln("</td></tr>");
+					}
+				}
+				document.writeln("</table>");
+			}
+		}
+	}
+	
+	document.checkAddress = function (){
+	    var langboxes = document.getElementsByName("lang");
+	    document.langs = [];
+	    for (var i = 0; i < langboxes .length; i++){
+	        if (langboxes [i].checked){
+	            document.langs.push(langboxes[i].value);
+	        }
+	    }
+	    document.close();
+	    document.open();
+	    run();
+	};
+	
+	var xmlDoc;
+	
+	window.onload = function() {
+		document.langs = [];
+		xmlDoc = loadXMLDoc("classified_links.xml");
+		setuplangs(xmlDoc);
+    		run();
 	}
 	</script>
  
