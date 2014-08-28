@@ -9,10 +9,12 @@
  
 	<script>
 	document.write=function(s){
-	    document.getElementsByTagName('script')[document.getElementsByTagName('script').length-1].insertAdjacentHTML("beforebegin", s);
+			var scripts = document.getElementsByTagName('script');
+	    scripts[scripts.length-1].insertAdjacentHTML("beforebegin", s);
 	}
 	document.writeln=function(s){
-	    document.getElementsByTagName('script')[document.getElementsByTagName('script').length-1].insertAdjacentHTML("beforebegin", s);
+			var scripts = document.getElementsByTagName('script');
+	    scripts[scripts.length-1].insertAdjacentHTML("beforebegin", s);
 	}
 	function setuplangs(xmlDoc)
 	{
