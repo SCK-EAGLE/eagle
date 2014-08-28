@@ -6,6 +6,11 @@ table {
 	width: 100%;
 }
 
+.disclaimer {
+	background-color:#B4009E;
+	color:#ffffff;
+}
+
 h1 {
 	color: orange;
 	text-align: center;
