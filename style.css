@@ -67,4 +67,5 @@ a:active {
 
 .la {
     text-decoration: none;
+    color:inherit;
 }
