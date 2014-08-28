@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Annotations>
+  <Annotation about="en.wikipedia.org/">
+    <Label name="mylabel" />
+  </Annotation>
+  <Annotation about="twitter.com/">
+    <Label name="mylabel" />
+  </Annotation>
+  http://www.who.int/ionizing_radiation/about/what_is_ir/en/
+  <Annotation about="twitter.com/">
+    <Label name="mylabel" />
+  </Annotation>
+  <Annotation about="twitter.com/">
+    <Label name="mylabel" />
+  </Annotation>
+  <Annotation about="twitter.com/">
+    <Label name="mylabel" />
+  </Annotation>
+  <Annotation about="twitter.com/">
+    <Label name="mylabel" />
+  </Annotation>
+</Annotations>
