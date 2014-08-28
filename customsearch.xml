@@ -11,6 +11,8 @@
            <!-- In the spirit of solar, this search engine has a yellow background with orange titles -->
         </LookAndFeel>
     </CustomSearchEngine>
+    
+    <Include type="Annotations" href="http://guha.com/cref_anno.xml"/>
 
 <Annotations>
   <Annotation about="http://www.who.int/ionizing_radiation/about/what_is_ir/en/">
