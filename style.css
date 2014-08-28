@@ -24,10 +24,14 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #99CCFF;
 }
 
 th {
     background-color: #99CCFF;
     color: white;
+}
+
+td {
+    padding: 5px;
 }
