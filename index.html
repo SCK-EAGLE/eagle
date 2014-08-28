@@ -5,13 +5,53 @@
 	<title>Ionizing Radiation Information HUB</title>
 </head>
  <body>
+ 	<div class="disclaimer" id="headdiv">
+ 		
+ 	</div>
  	
+ 	<a href="http://twitter.com">twitter</a>
+ 	<a href="http://en.wikipedia.org">twitter</a>
+ 	
+ 	<div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #0066FF;">
+ 	<div id="filterdiv">
+ 		
+ 	</div>
+ 	<script>
+	  (function() {
+	    var cref = 'https://www.google.com/cse/tools/makeannotations?url=sck-eagle.github.io%2Feagle%2F&label=mylabel&pattern=exact';
+	    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+	    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	      '//www.google.com/cse/cse.js?cref=' + cref;
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+	  })();
+	</script>
+	<gcse:search></gcse:search>
+
+ 	</div>
+ 	<div id="maindiv">
+ 		
+ 	</div>
  
 	<script>
+	document.write=function(s){
+		var element = document.getElementById(document.position);
+		element.insertAdjacentHTML("beforeend", s);
+	};
+	document.writeln=function(s){
+		//var scripts = document.getElementsByTagName('script');
+	    	//scripts[scripts.length-1].insertAdjacentHTML("beforebegin", s);
+	    	var element = document.getElementById(document.position);
+		element.insertAdjacentHTML("beforeend", s);
+	};
+	document.addCreatedElement=function(element){
+		var container = document.getElementById("maindiv");
+		container.appendChild(element);
+	};
 	
 	function setuplangs(xmlDoc)
 	{
 		//document.writeln('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
+		document.position="filterdiv";
 		document.writeln("<h2>Filters</h2>");
 		document.writeln("<h3>Languages</h3>");
 		var languages = xmlDoc.getElementsByTagName("language");
@@ -47,10 +87,11 @@
 	 xhttp.open("GET",filename,false);
 	 xhttp.send();
 	 return xhttp.responseXML;
-	 } 
+	 }
 	 
 	function run() { 
-		
+		document.position="headdiv";
+		document.getElementById(document.position).innerHTML = "";
 		document.writeln("<h1>Disclaimer</h1>");
 		document.writeln("<p><i>");
 		document.write("This website contains links to other websites which are hosted and maintained by third");
@@ -63,7 +104,8 @@
 		document.writeln("information will then be reviewed, and put online if it is suitable.");
 		document.writeln("</i></p>");
 		
-			
+		document.position="maindiv";
+		document.getElementById(document.position).innerHTML = "";
 		var c = xmlDoc.getElementsByTagName("classification");
 		for (i=0; i < c.length; i++){
 			document.write("<h2>" + c[i].getAttribute("name") + "</h2>");
@@ -72,40 +114,47 @@
 				child = childs[j];
 				document.write("<h3>"+child.getAttribute("type")+"</h3>");
 				entries = child.getElementsByTagName("entry");
-				document.writeln("<table border='1'>");
-				document.writeln("<tr><td>");
-				document.writeln("</td><td>");
-				document.write("<b>Title</b>");
-				document.writeln("</td><td>");
-				document.write("<b>Author</b>");
-				document.writeln("</td><td>");
-				document.write("<b>Description</b>");
-				document.writeln("</td><td>");
-				document.writeln("</td></tr>");
+				var table = document.createElement('table');
+  				table.setAttribute('border', '1');
+  				
+  				var tablehtml;
+
+				tablehtml = "<table border='1'>";
+				tablehtml += "<tr><td>";
+				tablehtml +=("</td><td>");
+				tablehtml +=("<b>Title</b>");
+				tablehtml +=("</td><td>");
+				tablehtml +=("<b>Author</b>");
+				tablehtml +=("</td><td>");
+				tablehtml +=("<b>Description</b>");
+				tablehtml +=("</td><td>");
+				tablehtml +=("</td></tr>");
 				for(k = 0; k < entries.length; k++){
 					//alert("testing: " + document.langs);
 					entry = entries[k];
 					if (document.langs.indexOf(entry.getAttribute("language")) != -1){
 					var text;
-					document.writeln("<tr><td>");
+					tablehtml +=("<tr><td>");
 					var text = entry.getAttribute("language");
-					document.write(text);
-					document.writeln("</td><td>");
+					tablehtml +=(text);
+					tablehtml +=("</td><td>");
 					var text = entry.getAttribute("title");
-					document.write(text);
-					document.writeln("</td><td>");
+					tablehtml +=(text);
+					tablehtml +=("</td><td>");
 					var text = entry.getAttribute("author");
-					document.write(text);
-					document.writeln("</td><td>");
+					tablehtml +=(text);
+					tablehtml +=("</td><td>");
 					var text = entry.getAttribute("description");
-					document.write(text);
-					document.writeln("</td><td>");
+					tablehtml +=(text);
+					tablehtml +=("</td><td>");
 					var text = entry.getAttribute("url");
-					document.write("<a href=" + text + ">Visit</a>");
-					document.writeln("</td></tr>");
+					tablehtml +=("<a href=" + text + ">Visit</a>");
+					tablehtml +=("</td></tr>");
 					}
 				}
-				document.writeln("</table>");
+				tablehtml +=("</table>");
+				//document.addCreatedElement(table);
+				document.writeln(tablehtml);
 			}
 		}
 	}
@@ -118,19 +167,18 @@
 	            document.langs.push(langboxes[i].value);
 	        }
 	    }
-	    document.close();
-	    document.open();
 	    run();
 	};
 	
 	var xmlDoc;
 	
 	window.onload = function() {
+		document.position = "headdiv";
 		document.langs = [];
 		xmlDoc = loadXMLDoc("classified_links.xml");
 		setuplangs(xmlDoc);
     		run();
-	}
+	};
 	</script>
  
 </body>

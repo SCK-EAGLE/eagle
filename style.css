@@ -1,6 +1,20 @@
-<style>
+html * {
+   	font-family: Calibri !important;
+}
+
+table {
+	width: 100%;
+}
+
+.disclaimer {
+	border-radius: 10px;
+	background-color:#99CCFF;
+	color:#ffffff;
+	margin: 10px; 
+	padding: 10px;
+}
+
 h1 {
-	color: orange;
+	color: white;
 	text-align: center;
 }
-</style>
