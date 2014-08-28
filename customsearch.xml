@@ -14,7 +14,7 @@
     
     <Include type="Annotations" href="http://guha.com/cref_anno.xml"/>
 
-<Annotations>
+<!--<Annotations>
   <Annotation about="http://www.who.int/ionizing_radiation/about/what_is_ir/en/">
     <Label name="mylabel" />
   </Annotation>
@@ -61,6 +61,6 @@
     <Label name="mylabel" />
   </Annotation>
   
-</Annotations>
+</Annotations>-->
 
 </GoogleCustomizations>
