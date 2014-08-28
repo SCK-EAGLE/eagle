@@ -8,7 +8,16 @@
  	
  
 	<script>
-	
+	document.write=function(s){
+	    var scripts = document.getElementsByTagName('script');
+	    var lastScript = scripts[scripts.length-1];
+	    lastScript.insertAdjacentHTML("beforebegin", s);
+	}
+	document.writeln=function(s){
+	    var scripts = document.getElementsByTagName('script');
+	    var lastScript = scripts[scripts.length-1];
+	    lastScript.insertAdjacentHTML("beforebegin", s);
+	}
 	function setuplangs(xmlDoc)
 	{
 		//document.writeln('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
