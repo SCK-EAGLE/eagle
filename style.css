@@ -67,6 +67,16 @@ a:active {
     color: white;
 }
 
+.lt:hover a{
+    background-color: #99CCFF;
+    color: white;
+}
+
+.lt:hover .la{
+    background-color: #99CCFF;
+    color: white;
+}
+
 .la:link {
     text-decoration: none;
     color: #99CCFF;
