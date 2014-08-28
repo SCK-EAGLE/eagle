@@ -13,19 +13,18 @@
 	document.write=function(s){
 		var element = document.getElementById("maindiv");
 		element.insertAdjacentHTML("beforebegin", s);
-	}
+	};
 	document.writeln=function(s){
 		//var scripts = document.getElementsByTagName('script');
 	    	//scripts[scripts.length-1].insertAdjacentHTML("beforebegin", s);
 	    	var element = document.getElementById("maindiv");
 		element.insertAdjacentHTML("beforebegin", s + );
-	}
-	/*document.addCreatedElement=function(element){
-		alert("Test");
+	};
+	document.addCreatedElement=function(element){
 		var container = document.getElementById("maindiv");
 		container.appendChild(element);
 		alert(container.nodeValue);
-	}*/
+	};
 	
 	function setuplangs(xmlDoc)
 	{
@@ -65,7 +64,7 @@
 	 xhttp.open("GET",filename,false);
 	 xhttp.send();
 	 return xhttp.responseXML;
-	 } 
+	 }
 	 
 	function run() { 
 		alert("test");
@@ -156,7 +155,7 @@
 		xmlDoc = loadXMLDoc("classified_links.xml");
 		setuplangs(xmlDoc);
     		run();
-	}
+	};
 	</script>
  
 </body>
