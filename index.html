@@ -8,6 +8,9 @@
  	<div id="headdiv">
  		
  	</div>
+ 	<div id="filterdiv">
+ 		
+ 	</div>
  	<div id="maindiv">
  		
  	</div>
@@ -31,6 +34,7 @@
 	function setuplangs(xmlDoc)
 	{
 		//document.writeln('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
+		document.position="filterdiv";
 		document.writeln("<h2>Filters</h2>");
 		document.writeln("<h3>Languages</h3>");
 		var languages = xmlDoc.getElementsByTagName("language");
