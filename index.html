@@ -5,7 +5,7 @@
 	<title>Ionizing Radiation Information HUB</title>
 </head>
  <body>
- 	<div id="headdiv">
+ 	<div class="disclaimer" id="headdiv">
  		
  	</div>
  	<div id="filterdiv">
@@ -75,7 +75,6 @@
 	function run() { 
 		document.position="headdiv";
 		document.getElementById(document.position).innerHTML = "";
-		docuemnt.writeln("<span style=\"background-color:#B4009E;color:#ffffff;\">");
 		document.writeln("<h1>Disclaimer</h1>");
 		document.writeln("<p><i>");
 		document.write("This website contains links to other websites which are hosted and maintained by third");
@@ -87,7 +86,6 @@
 		document.write("address: <a href=\"mailto:eagle_secretariat@rec-lj.si\">eagle_secretariat@rec-lj.si</a>. The ");
 		document.writeln("information will then be reviewed, and put online if it is suitable.");
 		document.writeln("</i></p>");
-		document.writeln("</span>");
 		
 		document.position="maindiv";
 		document.getElementById(document.position).innerHTML = "";
