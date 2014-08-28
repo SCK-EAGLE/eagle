@@ -18,8 +18,13 @@
 		//var scripts = document.getElementsByTagName('script');
 	    	//scripts[scripts.length-1].insertAdjacentHTML("beforebegin", s);
 	    	var element = document.getElementById("maindiv");
-		element.insertAdjacentHTML("beforebegin", s);
+		element.insertAdjacentHTML("beforebegin", s + );
 	}
+	document.addCreatedElement(element){
+		var container = document.getElementById("maindiv");
+		container.appendChild(element);
+	}
+	
 	function setuplangs(xmlDoc)
 	{
 		//document.writeln('<form action=""><input type="checkbox" name="lang" value="EN" onclick="checkAddress(this)">English<br><input type="checkbox" name="lang" value="NL" onclick="checkAddress(this)">Nederlands<br><input type="checkbox" name="lang" value="FR" onclick="checkAddress(this)">Frans<br></form>');
@@ -83,40 +88,46 @@
 				child = childs[j];
 				document.write("<h3>"+child.getAttribute("type")+"</h3>");
 				entries = child.getElementsByTagName("entry");
-				document.writeln("<table border='1'>");
-				document.writeln("<tr><td>");
-				document.writeln("</td><td>");
-				document.write("<b>Title</b>");
-				document.writeln("</td><td>");
-				document.write("<b>Author</b>");
-				document.writeln("</td><td>");
-				document.write("<b>Description</b>");
-				document.writeln("</td><td>");
-				document.writeln("</td></tr>");
+				
+				var table = document.createElement('table');
+
+  				table.setAttribute('border', '1');
+
+				table.innerHTML = "<table border='1'>";
+				table.innerHTML += "<tr><td>";
+				table.innerHTML +=("</td><td>");
+				table.innerHTML +=("<b>Title</b>");
+				table.innerHTML +=("</td><td>");
+				table.innerHTML +=("<b>Author</b>");
+				table.innerHTML +=("</td><td>");
+				table.innerHTML +=("<b>Description</b>");
+				table.innerHTML +=("</td><td>");
+				table.innerHTML +=("</td></tr>");
 				for(k = 0; k < entries.length; k++){
 					//alert("testing: " + document.langs);
 					entry = entries[k];
 					if (document.langs.indexOf(entry.getAttribute("language")) != -1){
 					var text;
-					document.writeln("<tr><td>");
+					table.innerHTML +=("<tr><td>");
 					var text = entry.getAttribute("language");
-					document.write(text);
-					document.writeln("</td><td>");
+					table.innerHTML +=(text);
+					table.innerHTML +=("</td><td>");
 					var text = entry.getAttribute("title");
-					document.write(text);
-					document.writeln("</td><td>");
+					table.innerHTML +=(text);
+					table.innerHTML +=("</td><td>");
 					var text = entry.getAttribute("author");
-					document.write(text);
-					document.writeln("</td><td>");
+					table.innerHTML +=(text);
+					table.innerHTML +=("</td><td>");
 					var text = entry.getAttribute("description");
-					document.write(text);
-					document.writeln("</td><td>");
+					table.innerHTML +=(text);
+					table.innerHTML +=("</td><td>");
 					var text = entry.getAttribute("url");
-					document.write("<a href=" + text + ">Visit</a>");
-					document.writeln("</td></tr>");
+					table.innerHTML +=("<a href=" + text + ">Visit</a>");
+					table.innerHTML +=("</td></tr>");
 					}
 				}
-				document.writeln("</table>");
+				table.innerHTML +=("</table>");
+				addCreatedElement(table);
 			}
 		}
 	}
