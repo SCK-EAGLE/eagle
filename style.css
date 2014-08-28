@@ -7,9 +7,11 @@ table {
 }
 
 .disclaimer {
-	border-radius: 30px;
+	border-radius: 10px;
 	background-color:#99CCFF;
 	color:#ffffff;
+	margin: 10px; 
+	padding: 10px;
 }
 
 h1 {
