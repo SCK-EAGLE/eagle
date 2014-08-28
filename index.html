@@ -5,16 +5,20 @@
 	<title>Ionizing Radiation Information HUB</title>
 </head>
  <body>
- 	
+ 	<div id="maindiv">
+ 		
+ 	</div>
  
 	<script>
 	document.write=function(s){
-			var scripts = document.getElementsByTagName('script');
-	    scripts[scripts.length-1].insertAdjacentHTML("beforebegin", s);
+		var element = document.getElementById("maindiv");
+		element.insertAdjacentHTML("beforebegin", s);
 	}
 	document.writeln=function(s){
-			var scripts = document.getElementsByTagName('script');
-	    scripts[scripts.length-1].insertAdjacentHTML("beforebegin", s);
+		//var scripts = document.getElementsByTagName('script');
+	    	//scripts[scripts.length-1].insertAdjacentHTML("beforebegin", s);
+	    	var element = document.getElementById("maindiv");
+		element.insertAdjacentHTML("beforebegin", s);
 	}
 	function setuplangs(xmlDoc)
 	{
