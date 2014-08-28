@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<GoogleCustomizations>
+    <CustomSearchEngine>
+        <Title>Solar Energy</Title>
+        <Description>A Google Custom Search Engine that only includes solar energy sites</Description>
+        <Context>
+           <BackgroundLabels>
+             <Label name="solar_example" mode="FILTER" />
+          </BackgroundLabels>
+        </Context>
+        <LookAndFeel nonprofit="true">
+           <!-- In the spirit of solar, this search engine has a yellow background with orange titles -->
+           <Colors url="#FF6600" background="#FFFF33" border="#FF6600" title="#FF3300" text="#000000" visited="#663399" light="#FF0077"/>
+        </LookAndFeel>
+    </CustomSearchEngine>
+
 <Annotations>
   <Annotation about="http://www.who.int/ionizing_radiation/about/what_is_ir/en/">
     <Label name="mylabel" />
@@ -47,3 +62,5 @@
   </Annotation>
   
 </Annotations>
+
+</GoogleCustomizations>
