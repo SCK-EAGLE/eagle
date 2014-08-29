@@ -53,6 +53,12 @@
 		</list>
 		<list type="information">
 			<entry
+				language="FR"
+				url="http://www.sfrp.asso.fr/spip.php?rubrique28&lang\=fr"
+				title="Publications de la SFRP"
+				author="Societe Fracaise de Radioprotection"
+				description="" />
+			<entry
 				language="EN"
 				url="http://en.wikipedia.org/wiki/Ionizing_radiation"
 				title="Ionizing radiation"
