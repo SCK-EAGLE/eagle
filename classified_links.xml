@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <EAGLE>
-	<language tag="NL">Nederlands</language>
-	<language tag="FR">Francais</language>
+	<language tag="NL">Dutch (Nederlands)</language>
+	<language tag="FR">French (Francais)</language>
 	<language tag="EN">English</language>
 	<language tag="HU">Hungarian (magyar)</language>
+	<language tag="IT">Italian (italiano)</language>
 	<classification 
 		type="level_of_detail"
 		name="Order by detail"
@@ -72,6 +73,12 @@
 				description="" />
 		</list>
 		<list type="information">
+			<entry
+				language="NL"
+				url="http://www.nvs-straling.nl/wat-is-straling"
+				title="Wat is straling?"
+				author="Nederlandse Vereniging voor Stralingshygiëne"
+				description="" />
 			<entry
 				language="HU"
 				url="http://www.katasztrofavedelem.hu/index2.php?pageid=web_gyik_reszletek&amp;gyik_id=22"
@@ -166,6 +173,12 @@
 				url="rayons-sante.com"
 				title="Rayons Santé"
 				author="Rayons Santé"
+				description="" />
+			<entry
+				language="IT"
+				url="http://www.fisicamedica.it/aifm/11_rubr_s/spip.php?article78"
+				title="Informazione per i pazienti e per la popolazione in generale"
+				author="Associazione Italiana di Fisica Medica"
 				description="" />
 		</list>
 		<list type="incidents and accidents">
