@@ -30,7 +30,7 @@
 	<classification 
 		type="application"
 		name="By application" >
-		<list type="dangers and protection">
+		<list type="dangers, safety and protection">
 			<entry 
 				language="EN"
 				url="http://www.nrc.gov/about-nrc/radiation/rad-health-effects.html"
@@ -56,6 +56,18 @@
 				url="www.vous-avez-dit-radioprotection.fr"
 				title="VOUS AVEZ DIT RADIOPROTECTION?"
 				author="EPSIM"
+				description="" />
+			<entry
+				language="FR"
+				url="http://www.asn.fr/"
+				title="Faire progresser la sûreté nucléaire et la radioprotection"
+				author="Autorité de sûreté nucléaire"
+				description="" />
+			<entry
+				language="FR"
+				url="http://www.irsn.fr"
+				title="Faire avancer la sûreté nucléaire"
+				author="Institut de Radioprotection et de Sûreté Nucléaire"
 				description="" />
 		</list>
 		<list type="information">
