@@ -47,6 +47,12 @@
 				author="Federaal agentschap voor nucleaire controle"
 				description="Informatie en tips voor bescherming tegen radon besmetting"/>
 			<entry 
+				language="NL"
+				url="http://www-pub.iaea.org/MTCD/Publications/PDF/EPR-Communcation_web.pdf"
+				title="Communication with the Public in a Nuclear or Radiological Emergency"
+				author="International Atomic Energy Agency"
+				description=""/>
+			<entry 
 				language="FR"
 				url="http://www.fanc.fgov.be/fr/page/646.aspx"
 				title="Radon: dangers et protection"
@@ -78,6 +84,12 @@
 				url="http://www.nvs-straling.nl/wat-is-straling"
 				title="Wat is straling?"
 				author="Nederlandse Vereniging voor Stralingshygiëne"
+				description="" />
+			<entry
+				language="FR"
+				url="http://www.nuclearsafety.gc.ca/fra/resources/educational-resources/classroom-tools/index.cfm"
+				title="Outils pour les enseignants"
+				author="Commission canadienne de sûreté nucléaire"
 				description="" />
 			<entry
 				language="HU"
