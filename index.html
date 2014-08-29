@@ -166,6 +166,10 @@
 	        }
 	    }
 	    run();
+	    var x = document.getElementsByTagName("a");
+		for (i = 0; i < x.length; i++){
+			document.getElementsByTagName("a")[i].setAttribute("target","_blank"); 
+		}
 	};
 	
 	var xmlDoc;
