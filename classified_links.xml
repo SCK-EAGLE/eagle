@@ -3,6 +3,7 @@
 	<language tag="NL">Nederlands</language>
 	<language tag="FR">Francais</language>
 	<language tag="EN">English</language>
+	<language tag="HU">Hungarian (magyar)</language>
 	<classification 
 		type="level_of_detail"
 		name="Order by detail"
@@ -72,10 +73,28 @@
 		</list>
 		<list type="information">
 			<entry
-				language="FR"
-				url="http://www.lesateliersdelaradioprotection.com/"
-				title="Les Ateliers de la Radioprotection"
-				author="Les Ateliers de la Radioprotection"
+				language="HU"
+				url="http://www.katasztrofavedelem.hu/index2.php?pageid=web_gyik_reszletek&gyik_id=22"
+				title=""
+				author="National Directorate General for Disaster Management"
+				description="" />
+			<entry
+				language="HU"
+				url="http://www.katasztrofavedelem.hu/index2.php?pageid=web_gyik_reszletek&gyik_id=23"
+				title=""
+				author="National Directorate General for Disaster Management"
+				description="" />
+			<entry
+				language="HU"
+				url="nukleraj.blog.hu"
+				title="A mag és az energia"
+				author="Hungarian Nuclear Society Young Generation Network"
+				description="" />
+			<entry
+				language="HU"
+				url="http://sugarbio.blogspot.hu/"
+				title="Sugárterhelés "
+				author="Arpad Farkas"
 				description="" />
 			<entry
 				language="FR"
