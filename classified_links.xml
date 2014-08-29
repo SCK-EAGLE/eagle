@@ -50,8 +50,21 @@
 				title="Radon: dangers et protection"
 				author="Agence federale de controle nucleaire"
 				description="Informations et conseils pour la protection contre la contamination au radon"/>
+		
+			<entry
+				language="FR"
+				url="www.vous-avez-dit-radioprotection.fr"
+				title="VOUS AVEZ DIT RADIOPROTECTION?"
+				author="EPSIM"
+				description="" />
 		</list>
 		<list type="information">
+			<entry
+				language="FR"
+				url="http://www.lesateliersdelaradioprotection.com/"
+				title="Les Ateliers de la Radioprotection"
+				author="Les Ateliers de la Radioprotection"
+				description="" />
 			<entry
 				language="FR"
 				url="http://www.sfrp.asso.fr/spip.php?rubrique28&amp;lang=fr"
@@ -116,6 +129,13 @@
 				title="Radiation Therapy for Cancer"
 				author="National Cancer Institute"
 				description="Web page providing a detailed explanation of using radiation to combat cancer"/>
+		
+			<entry
+				language="FR"
+				url="rayons-sante.com"
+				title="Rayons Santé"
+				author="Rayons Santé"
+				description="" />
 		</list>
 		<list type="incidents and accidents">
 			<entry 
