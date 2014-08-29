@@ -54,7 +54,7 @@
 		<list type="information">
 			<entry
 				language="FR"
-				url="http://www.sfrp.asso.fr/spip.php?rubrique28&lang\=fr"
+				url=<![CDATA["http://www.sfrp.asso.fr/spip.php?rubrique28&lang=fr"]]>
 				title="Publications de la SFRP"
 				author="Societe Fracaise de Radioprotection"
 				description="" />
