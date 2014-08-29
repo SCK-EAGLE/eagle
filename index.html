@@ -169,10 +169,6 @@
 	};
 	
 	var xmlDoc;
-	var x = document.getElementsByTagName("a");
-	for (i = 0; i < x.length; i++){
-		document.getElementsByTagName("a")[i].setAttribute("target","_blank"); 
-	}
 	
 	window.onload = function() {
 		document.position = "headdiv";
@@ -180,6 +176,10 @@
 		xmlDoc = loadXMLDoc("classified_links.xml");
 		setuplangs(xmlDoc);
     		run();
+    		var x = document.getElementsByTagName("a");
+		for (i = 0; i < x.length; i++){
+			document.getElementsByTagName("a")[i].setAttribute("target","_blank"); 
+		}
 	};
 	</script>
  
