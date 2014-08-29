@@ -74,13 +74,13 @@
 		<list type="information">
 			<entry
 				language="HU"
-				url="http://www.katasztrofavedelem.hu/index2.php?pageid=web_gyik_reszletek&gyik_id=22"
+				url="http://www.katasztrofavedelem.hu/index2.php?pageid=web_gyik_reszletek&amp;gyik_id=22"
 				title=""
 				author="National Directorate General for Disaster Management"
 				description="" />
 			<entry
 				language="HU"
-				url="http://www.katasztrofavedelem.hu/index2.php?pageid=web_gyik_reszletek&gyik_id=23"
+				url="http://www.katasztrofavedelem.hu/index2.php?pageid=web_gyik_reszletek&amp;gyik_id=23"
 				title=""
 				author="National Directorate General for Disaster Management"
 				description="" />
