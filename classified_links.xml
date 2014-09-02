@@ -84,6 +84,26 @@
 				author="Thierry SCHNEIDER, Cynthia REAUD, Sylvie CHARRON, Jean-Yves BERNAUD"
 				description="" />
 		</list>
+		<list type="Radon">
+			<entry
+				language="NL"
+				url="http://nl.wikipedia.org/wiki/Radon_%28element%29"
+				title="Wikipedia pagine over Radon"
+				author=""
+				description="" />
+			<entry
+				language="FR"
+				url="http://fr.wikipedia.org/wiki/Radon"
+				title="Wikipedia page sur Radon"
+				author=""
+				description="" />
+			<entry
+				language="EN"
+				url="http://en.wikipedia.org/wiki/Radon"
+				title="Wikipedia page on Radon"
+				author=""
+				description="" />
+		</list>
 		<list type="information">
 			<entry
 				language="NL"
