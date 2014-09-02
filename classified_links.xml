@@ -107,7 +107,19 @@
 				language="NL"
 				url="http://www.milieucentraal.nl/themas/klimaat-en-milieuproblemen/gezondheid-en-milieu/radongas-en-thoron-in-huis"
 				title="Radongas en thoron in huis"
-				author="Milieu centraal"
+				author="Milieu centraal (BE)"
+				description="" />
+			<entry
+				language="EN"
+				url="http://en.wikipedia.org/wiki/Health_effects_of_radon"
+				title="Wikipedia page on Health Effects of Radon"
+				author=""
+				description="" />
+			<entry
+				language="EN"
+				url="http://www.epa.gov/radon/"
+				title="Radon Home Page"
+				author="United States Environmental Protection Agency (US)"
 				description="" />
 		</list>
 		<list type="information">
