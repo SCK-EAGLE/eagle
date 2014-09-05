@@ -33,6 +33,12 @@
 		type="application"
 		name="By application" >
 		<list type="dangers, safety and protection">
+			<entry
+				language="EN"
+				url="https://www.osha.gov/SLTC/radiationionizing/introtoionizing/ionizinghandout.html"
+				title="Introduction to ionizing radiation"
+				author="Occupational Safety and Health Administration"
+				description=""/>
 			<entry 
 				language="EN"
 				url="http://www.nrc.gov/about-nrc/radiation/rad-health-effects.html"
@@ -256,6 +262,12 @@
 				title="Nuclear power plant accidents: listed and ranked since 1952"
 				author="The Guardian"
 				description="Information about the INES scale and a summation of all accidents registered on this scale."/>
+			<entry
+				language="EN"
+				url="http://www-news.iaea.org/EventList.aspx?ps=100&pno=0"
+				title="News, Events"
+				author="International Atomic Energy Agency"
+				description="News page about nuclear events (often including radiation risk)"/>
 			<entry 
 				language="EN"
 				url="http://chernobylgallery.com/chernobyl-disaster/radiation-levels/"
