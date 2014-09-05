@@ -244,6 +244,18 @@
 				description="" />
 		</list>
 		<list type="incidents and accidents">
+			<entry
+				language="EN"
+				url="http://www-ns.iaea.org/tech-areas/emergency/ines.asp"
+				title="The International Nuclear and Radiological Event Scale"
+				author="International Atomic Energy Agency"
+				description="INES is a tool for promptly and consistently communicating to the public the safety significance of events associated with sources of ionizing radiation."/>
+			<entry
+				language="EN"
+				url="http://www.theguardian.com/news/datablog/2011/mar/14/nuclear-power-plant-accidents-list-rank"
+				title="Nuclear power plant accidents: listed and ranked since 1952"
+				author="The Guardian"
+				description="Information about the INES scale and a summation of all accidents registered on this scale."/>
 			<entry 
 				language="EN"
 				url="http://chernobylgallery.com/chernobyl-disaster/radiation-levels/"
