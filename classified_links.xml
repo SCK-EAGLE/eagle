@@ -95,6 +95,12 @@
 				title="Radiation protection culture at school: feedback experience and perspective"
 				author="Thierry SCHNEIDER, Cynthia REAUD, Sylvie CHARRON, Jean-Yves BERNAUD"
 				description="" />
+			<entry
+				language="EN"
+				url="http://www.cancer.gov/cancertopics/factsheet/Risk/radon"
+				title="Radon and Cancer"
+				author="National Cancer Institute (US)"
+				description="" />
 		</list>
 		<list type="Radon">
 			<entry
@@ -133,8 +139,32 @@
 				title="Radon Home Page"
 				author="United States Environmental Protection Agency (US)"
 				description="" />
+			<entry
+				language="NL"
+				url="http://www.mmk.be/vrij.cfm?Id=381"
+				title="Radon"
+				author="Medisch Milieukundigen (BE)"
+				description="" />
+			<entry
+				language="EN"
+				url="http://www.ukradon.org/information/risks"
+				title="The risks to your health from radon"
+				author="Public Health England"
+				description="" />
+			<entry
+				language="EN"
+				url="http://www.doctoroz.com/article/radon-danger-your-home"
+				title="Radon: A Danger in Your Home"
+				author="The Dr. OZ show (US)"
+				description="" />
 		</list>
 		<list type="information">
+			<entry 
+				language="EN"
+				url="http://www.nuclearsafety.gc.ca/eng/resources/radiation/index.cfm"
+				title="Introduction to radiation"
+				author="Canadian Nuclear Safety Commission"
+				description=""/>
 			<entry
 				language="NL"
 				url="http://www.nvs-straling.nl/wat-is-straling"
@@ -142,22 +172,28 @@
 				author="Nederlandse Vereniging voor Stralingshygiëne"
 				description="" />
 			<entry
+				language="EN"
+				url="http://www.iaea.org/inis/events/index.html"
+				title="IAEA Events and Meetings"
+				author="International Atomic Energy Agency"
+				description="" />
+			<entry
 				language="FR"
 				url="http://www.nuclearsafety.gc.ca/fra/resources/educational-resources/classroom-tools/index.cfm"
 				title="Outils pour les enseignants"
-				author="Commission canadienne de sûreté nucléaire"
+				author="Commission canadienne de sûreté nucléaire (CA)"
 				description="" />
 			<entry
 				language="HU"
 				url="http://www.katasztrofavedelem.hu/index2.php?pageid=web_gyik_reszletek&amp;gyik_id=22"
 				title=""
-				author="National Directorate General for Disaster Management"
+				author="National Directorate General for Disaster Management (HU)"
 				description="" />
 			<entry
 				language="HU"
 				url="http://www.katasztrofavedelem.hu/index2.php?pageid=web_gyik_reszletek&amp;gyik_id=23"
 				title=""
-				author="National Directorate General for Disaster Management"
+				author="National Directorate General for Disaster Management (HU)"
 				description="" />
 			<entry
 				language="HU"
@@ -224,18 +260,17 @@
 		</list>
 		<list type="medical">
 			<entry 
-			    language="EN"
+			        language="EN"
 				url="https://www.iaea.org/Publications/Booklets/RadPeopleEnv/pdf/chapter_8.pdf"
 				title="Medical uses of radiation"
 				author="IAEA"
 				description=""/>
 			<entry 
-			    language="EN"
+			        language="EN"
 				url="http://www.cancer.gov/cancertopics/factsheet/Therapy/radiation"
 				title="Radiation Therapy for Cancer"
 				author="National Cancer Institute"
 				description="Web page providing a detailed explanation of using radiation to combat cancer"/>
-		
 			<entry
 				language="FR"
 				url="rayons-sante.com"
@@ -247,6 +282,18 @@
 				url="http://www.fisicamedica.it/aifm/11_rubr_s/spip.php?article78"
 				title="Informazione per i pazienti e per la popolazione in generale"
 				author="Associazione Italiana di Fisica Medica"
+				description="" />
+			<entry
+				language="EN"
+				url="https://www.iaea.org/Publications/Booklets/RadPeopleEnv/pdf/chapter_8.pdf"
+				title="Medical Uses of Radiation"
+				author="International Atomic Energy Agency"
+				description="" />
+			<entry
+				language="EN"
+				url="http://www.cdc.gov/nceh/radiation/ionizing.htm"
+				title="Radiation and Your Health"
+				author="Centers for Disease Control and Prevention"
 				description="" />
 		</list>
 		<list type="incidents and accidents">
@@ -274,6 +321,24 @@
 				title="Radiation Levels Now"
 				author="The Chernobyl Gallery"
 				description="Informative website about the radiation levels in Chernobyl then and now."/>
+			<entry 
+				language="EN"
+				url="http://en.wikipedia.org/wiki/Three_Mile_Island_accident"
+				title="Three Mile Island accident"
+				author=""
+				description=""/>
+			<entry 
+				language="EN"
+				url="http://en.wikipedia.org/wiki/Three_Mile_Island_accident_health_effects"
+				title="Three Mile Island accident health effects"
+				author=""
+				description=""/>
+			<entry 
+				language="EN"
+				url="http://www.nuclearsafety.gc.ca/eng/resources/fukushima/index.cfm"
+				title="Canada's Response to Fukushima"
+				author="Canadian Nuclear Safety Commission"
+				description=""/>	
 		</list>
 	</classification>
 </EAGLE>
