@@ -161,6 +161,18 @@
 		<list type="information">
 			<entry 
 				language="EN"
+				url="http://web.ornl.gov/sci/env_rpt/aser95/appa.htm"
+				title="Radiation"
+				author="Oak Ridge Reservation"
+				description=""/>
+			<entry 
+				language="EN"
+				url="http://www.npl.co.uk/educate-explore/posters/ionising-radiation/"
+				title="Ionising Radiation"
+				author="National Physical Laboratory (UK)"
+				description=""/>
+			<entry 
+				language="EN"
 				url="http://www.nuclearsafety.gc.ca/eng/resources/radiation/index.cfm"
 				title="Introduction to radiation"
 				author="Canadian Nuclear Safety Commission"
