@@ -157,12 +157,7 @@
 				title="Radon: A Danger in Your Home"
 				author="The Dr. OZ show (US)"
 				description="" />
-			<entry
-				language="NL"
-				url="https://www.youtube.com/watch?v=EVB0F7kORII"
-				title="Physics 10 - Lecture 05: Radioactivity"
-				author="University of Berkely"
-				description="Interesting lecture on sources and dangers from ionizing / nuclear radiation" />
+			
 		</list>
 		<list type="General information about ionizing radiation">
 			<entry 
@@ -293,6 +288,12 @@
 				title="Radiation Fact Sheet"
 				author="Health Physics Today"
 				description="Web page containing fact sheets on many common and controversial topics concerning radiation" />
+			<entry
+				language="NL"
+				url="https://www.youtube.com/watch?v=EVB0F7kORII"
+				title="Physics 10 - Lecture 05: Radioactivity"
+				author="University of Berkely"
+				description="Interesting lecture on sources and dangers from ionizing / nuclear radiation" />
 		</list>
 		<list type="medical">
 			<entry 
