@@ -5,7 +5,7 @@
 	<language tag="EN">English</language>
 	<language tag="HU">Hungarian (magyar)</language>
 	<language tag="IT">Italian (italiano)</language>
-	<classification 
+	<!--<classification 
 		type="level_of_detail"
 		name="Order by detail"
 		language="ENG" >
@@ -28,7 +28,7 @@
 		<list type="scientific">
 			
 		</list>
-	</classification>
+	</classification>-->
 	<classification 
 		type="application"
 		name="By application" >
@@ -159,6 +159,24 @@
 				description="" />
 		</list>
 		<list type="General information about ionizing radiation">
+			<entry 
+				language="EN"
+				url="https://www.youtube.com/watch?v=uJ3ea9fa6CA"
+				title="IDTIMWYTIM: Radiation"
+				author="SciShow"
+				description="YouTube movie explaining different types of radiation"/>
+			<entry 
+				language="EN"
+				url="https://www.youtube.com/watch?v=xuqBaGvwFfQ"
+				title="ScienceMan Digital Lesson - Radioactivity - Dangerous Ionizing Radiation"
+				author="KSUinformation"
+				description="Seven short videos about ionizing radiation"/>
+			<entry 
+				language="EN"
+				url="https://www.youtube.com/playlist?list=PL2F32241381ECC3E7"
+				title="Ionizing Radiation "
+				author="ScienceMandotcom"
+				description="YouTube movie on dangerous ionizing radiation"/>
 			<entry 
 				language="EN"
 				url="http://web.ornl.gov/sci/env_rpt/aser95/appa.htm"
